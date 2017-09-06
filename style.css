@@ -1,28 +1,62 @@
-body {
-    font-family: Lato, sans-serif;
+* {
     box-sizing: border-box;
 }
 
-.wrapper {
+body {
+    font-family: Lato, sans-serif;
+}
+
+button {
+    background-color: #f16d7f;
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+}
+
+.center {
     max-width: 1140px;
     margin: 0 auto;
 }
 
 .header {
-    box-sizing: border-box;
-    background-color: red;
+    border: 1px solid #ececec;
+    background-color: #ffffff;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.17);
     height: 100px;
 }
 
+.header div {
+    display: inline-block;
+}
+
 .navbar {
-    background-color: lightgreen;
     height: 50px;
 }
 
-.navbar ul {
-    display: block;
+.menu {
+    display: flex;
+    width: 730px;
     margin: 0 auto;
+    justify-content: space-between;
+}
+
+.menu a {
+    display: block;
+    padding: 10px 19px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #222222;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.menu a:hover {
+    color: #777777;
 }
 
 .navbar li {
@@ -36,37 +70,287 @@ body {
 }
 
 .banners {
-    height: 800px;
-    background-color: lightpink;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 820px;
+}
+
+.banner-1, .banner-2 {
+    float: left;
+    width: 560px;
+}
+
+.banner-2 {
+    margin-left: 20px;
+}
+
+.banner-1-1, .banner-2-1 {
+    background-color: red;
+    height: 540px;
+}
+
+.banner-1-2, .banner-2-2 {
+    background-color: sandybrown;
+    height: 260px;
+}
+
+.banner-1-1, .banner-2-2 {
+    margin-bottom: 20px;
+}
+
+.banner-1-2 {
+    background-image: url(images/banners/banner-1-2.jpg);
+}
+
+.banner-1-1 {
+    background-image: url(images/banners/banner-1-1.jpg);
+}
+
+.banner-2-1 {
+    background-image: url(images/banners/banner-2-1.jpg);
+}
+
+.banner-2-2 {
+    background-image: url(images/banners/banner-2-2.jpg);
+}
+
+.banner-label {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 15px;
+    font-size: 20px;
+    line-height: 23px;
+    text-transform: uppercase;
+    display: inline-block;
+    background-color: azure;
+}
+
+.banner-label-category {
+    font-size: 24px;
+    font-weight: bold;
+    color: deeppink;
+}
+
+.banner-label span {
+    margin-left: 15px;
+    margin-right: 15px;
+    display: block;
 }
 
 .featured {
-    height: 800px;
-    background-color: salmon;
+    margin-top: 20px;
+    height: 590px;
+}
+
+.featured > div {
+    height: 265px;
+    width: 270px;
+    float: left;
+    position:relative;
+}
+
+.featured-title {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.featured-subtitle {
+    font-size: 17px;
+    line-height: 25px;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.featured-1 {
+    background-image: url(images/goods/1.jpg);
+    margin-bottom: 20px;
+}
+
+.featured-2 {
+    background-image: url(images/goods/2.jpg);
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.featured-3 {
+    background-image: url(images/goods/3.jpg);
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.featured-4 {
+    background-image: url(images/goods/4.jpg);
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.featured-5 {
+    background-image: url(images/goods/5.jpg);
+}
+
+.featured-6 {
+    background-image: url(images/goods/6.jpg);
+    margin-left: 20px;
+}
+
+.featured-7 {
+    background-image: url(images/goods/7.jpg);
+    margin-left: 20px;
+}
+
+.featured-8 {
+    background-image: url(images/goods/8.jpg);
+    margin-left: 20px;
+}
+
+.featured-info {
+     font-size: 20px;
+     background-color: #222222;
+     opacity: 0.7;
+     position:absolute;
+     bottom:0;
+     color: azure;
+     padding: 5px;
+ }
+
+.featured-info > .title {
+
+}
+
+.featured-info > .price {
+    display: none;
+}
+
+.featured-info:hover .price {
+    display: inline-block;
+}
+
+.featured-info > .price {
+    color: chartreuse;
 }
 
 .promotion {
     height: 530px;
-    background-color: powderblue;
+    width: 1140px;
+    margin-bottom: 30px;
+}
+
+.promotion-image {
+    height: 530px;
+    width: 760px;
+    float: left;
+    background-image: url(images/promotion.jpg);
+}
+
+.promotion-details {
+    height: 530px;
+    background-color: #222224;
+    padding: 30px 10px 10px;
+}
+
+.promotion-details .detail {
+    color: azure;
+    line-height: 25px;
+}
+
+.promotion-details > .detail > .logo {
+    height: 145px;
+    width: 90px;
+    float: left;
+    text-align: center;
+}
+
+.promotion-details .logo-delivery {
+    background-image: url(images/elements/delivery.png);
+}
+
+.promotion-details .logo-discounts {
+    background-image: url(images/elements/discount.png);
+}
+
+.promotion-details .logo-quality {
+    background-image: url(images/elements/quality.png);
+}
+
+div.logo img {
+    margin-top: 15px;
+    width: 70%;
+}
+
+.promotion-details > .detail >.title {
+    line-height: 75px;
+    font-size: 31px;
+    font-weight: 800;
+}
+
+.promotion-details > .detail > .description {
+    font-weight: lighter;
 }
 
 .communication {
     height: 440px;
-    background-color: olive;
+    background-color: lightgray;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.feedback {
+    height: 440px;
+    width: 50%;
+    float: left;
+    display: inline-block;
+}
+
+.subscribe {
+    height: 440px;
+    width: 50%;
+    display: inline-block;
+}
+
+.pre-footer {
+    height: 400px;
+    margin-bottom: 30px;
+}
+
+.pre-footer > .story {
+    width: 40%;
+    height: 400px;
+    display: inline-block;
+    float: left;
+}
+
+table {
+    height: 400px;
+    display: inline-block;
+    width: 55%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+thead th:nth-child(1) {
+    width: 30%;
+}
+
+thead th:nth-child(2) {
+    width: 20%;
+}
+
+thead th:nth-child(3) {
+    width: 15%;
+}
+
+thead th:nth-child(4) {
+    width: 35%;
+}
+
+th, td {
+    padding: 20px;
 }
 
 .footer {
-    height: 500px;
-    background-color: rosybrown;
-}
-
-.footer .table {
-    height: 420px;
-}
-
-.footer .copyright {
     height: 80px;
-    background-color: blue;
+    background-color: #e6e6e6;
 }
 
 
