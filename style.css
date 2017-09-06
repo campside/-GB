@@ -20,6 +20,15 @@ body {
     height: 50px;
 }
 
+.navbar ul {
+    display: block;
+    margin: 0 auto;
+}
+
+.navbar li {
+    display: inline-block;
+}
+
 .slider {
     background-image: url(images/slider.png);
     background-color: lightgrey;
