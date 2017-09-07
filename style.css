@@ -27,10 +27,42 @@ button {
     background-color: #ffffff;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.17);
     height: 100px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .header div {
-    display: inline-block;
+    display: block;
+}
+
+.header .brand {
+    width: 150px;
+    margin-left: 30px;
+}
+
+.header .brand > .brand-logo {
+    width: 80px;
+    float: left;
+    height: 100px;
+    margin-top: 20px;
+}
+
+.brand span {
+    line-height: 100px;
+    text-align: center;
+    font-weight: 900;
+}
+
+.header .search {
+    width: 240px;
+    line-height: 100px;
+    text-align: center;
+}
+
+.header .cart {
+    width: 200px;
+    line-height: 100px;
+    text-align: center;
 }
 
 .navbar {
@@ -322,8 +354,9 @@ div.logo img {
 
 table {
     height: 400px;
+    margin-left: 50px;
     display: inline-block;
-    width: 55%;
+    width: 50%;
     table-layout: fixed;
     border-collapse: collapse;
 }
@@ -345,7 +378,7 @@ thead th:nth-child(4) {
 }
 
 th, td {
-    padding: 20px;
+    padding: 15px;
 }
 
 .footer {
