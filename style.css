@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    outline: none;
 }
 
 body {
@@ -15,6 +16,19 @@ button {
     text-decoration: none;
     display: inline-block;
     font-size: 15px;
+}
+
+input {
+    height: 38px;
+    border: 1px solid rgba(0, 0, 0, .15);
+}
+
+label {
+    padding: 10px;
+    color: #495057;
+    background-color: #e9ecef;
+    border: 1px solid rgba(0, 0, 0, .15);
+    border-radius: 0 .25rem .25rem 0;
 }
 
 .center {
@@ -88,11 +102,12 @@ button {
     color: #222222;
     font-size: 16px;
     font-weight: 700;
-    line-height: 26px;
+    line-height: 30px;
 }
 
 .menu a:hover {
     color: #777777;
+    border-bottom: mediumvioletred 4px solid;
 }
 
 .navbar li {
