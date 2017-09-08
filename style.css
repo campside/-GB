@@ -23,14 +23,6 @@ input {
     border: 1px solid rgba(0, 0, 0, .15);
 }
 
-label {
-    padding: 10px;
-    color: #495057;
-    background-color: #e9ecef;
-    border: 1px solid rgba(0, 0, 0, .15);
-    border-radius: 0 .25rem .25rem 0;
-}
-
 .center {
     max-width: 1140px;
     margin: 0 auto;
@@ -47,10 +39,7 @@ label {
     margin: auto;
     display: flex;
     justify-content: space-between;
-}
-
-.header div {
-    display: block;
+    padding-top: 30px;
 }
 
 .header .brand {
@@ -62,24 +51,24 @@ label {
     width: 80px;
     float: left;
     height: 100px;
-    margin-top: 20px;
 }
 
 .brand span {
-    line-height: 100px;
     text-align: center;
     font-weight: 900;
 }
 
 .header .search {
     width: 240px;
-    line-height: 100px;
     text-align: center;
+}
+
+div.search > span {
+    background-color: grey;
 }
 
 .header .cart {
     width: 200px;
-    line-height: 100px;
     text-align: center;
 }
 
@@ -96,7 +85,7 @@ label {
 
 .menu a {
     display: block;
-    padding: 10px 19px;
+    padding: 10px 18px;
     text-transform: uppercase;
     text-decoration: none;
     color: #222222;
