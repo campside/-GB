@@ -3,6 +3,10 @@
     outline: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
     font-family: Lato, sans-serif;
 }
@@ -13,14 +17,8 @@ button {
     color: white;
     padding: 10px 32px;
     text-align: center;
-    text-decoration: none;
     display: inline-block;
     font-size: 15px;
-}
-
-input {
-    height: 38px;
-    border: 1px solid rgba(0, 0, 0, .15);
 }
 
 .center {
@@ -39,37 +37,53 @@ input {
     margin: auto;
     display: flex;
     justify-content: space-between;
-    padding-top: 30px;
+    padding-top: 25px;
 }
 
-.header .brand {
-    width: 150px;
-    margin-left: 30px;
+.brand {
+    width: 185px;
+    height: 70px;
 }
 
-.header .brand > .brand-logo {
+.brand .brand-logo {
     width: 80px;
     float: left;
-    height: 100px;
 }
 
 .brand span {
-    text-align: center;
-    font-weight: 900;
+    margin-top: 15px;
+    display: block;
+    font-weight: 300;
+    font-size: 25px;
 }
 
-.header .search {
-    width: 240px;
-    text-align: center;
+.brand span b {
+    font-weight: bold;
+    color: #f16d7f;
 }
 
-div.search > span {
-    background-color: grey;
+.search input {
+    border: 1px solid rgba(0, 0, 0, .15);
+    font-size: 20px;
+    height: 40px;
 }
+
+.search .search-input {
+    float: left;
+    width: 320px;
+    padding-left: 20px;
+    display: inline-block;
+}
+
+.header .search .search {
+    display: inline-block;
+    width: 40px;
+    background: url(images/elements/search.png) left center no-repeat;
+}
+
 
 .header .cart {
-    width: 200px;
-    text-align: center;
+
 }
 
 .navbar {
@@ -420,8 +434,7 @@ div.logo img {
 
 .feedback-item .ava {
     display: block;
-    text-align: center;
-    width: 100px;
+    width: 125px;
     height: 160px;
     float: left;
 }
@@ -484,6 +497,12 @@ div.logo img {
     background-color: #e1e1e1;
 }
 
+.subscribe-form input {
+    text-align: center;
+    color: #222222;
+    font-size: 11px;
+}
+
 .subscribe-form .subscribe-submit {
     border-radius: 0 50px 50px 0;
     border: 0;
@@ -502,19 +521,38 @@ div.logo img {
 }
 
 .pre-footer > .story {
-    width: 40%;
+    width: 45%;
     height: 400px;
-    display: inline-block;
     float: left;
+    display: inline-block;
+    line-height: 24px;
+}
+
+.story .story-part {
+    display: block;
+    color: #898989;
+    font-weight: 300;
+}
+
+.story .brand span {
+    margin-top: 0;
+    line-height: 50px;
+
 }
 
 table {
-    height: 400px;
     margin-left: 50px;
     display: inline-block;
-    width: 50%;
-    table-layout: fixed;
-    border-collapse: collapse;
+    margin-top: -3px;
+
+}
+
+table th {
+    text-transform: uppercase;
+    color: #f16d7f;
+    font-weight: 900;
+    text-align: left;
+    font-size: 18px;
 }
 
 thead th:nth-child(1) {
@@ -534,7 +572,12 @@ thead th:nth-child(4) {
 }
 
 th, td {
-    padding: 15px;
+    padding: 20px 20px 20px 40px;
+    font-size: 16px;
+}
+
+td a {
+    color: #898989;
 }
 
 .footer {
