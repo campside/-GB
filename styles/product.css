@@ -55,6 +55,23 @@ section.main {
     display: inline-block;
 }
 
+.catalog button {
+    background-color: white;
+    border-left: 5px solid #f16d7f;
+    border-bottom: 1px solid #ebebeb;
+    color: #ef5b70;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.catalog .panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+}
+
 /* MAIN FILTER-GOODS */
 
 div.filters-goods {
