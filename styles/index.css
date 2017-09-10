@@ -222,22 +222,22 @@ div.cart .cart-icon {
     height: 810px;
 }
 
-.featured div.item {
+div.item {
     height: 350px;
     float: left;
  }
 
-.featured div.item:hover {
+div.item:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.featured div.item > div.featured-pic {
+div.item > div.featured-pic {
     position: relative;
     height: 265px;
     width: 270px;
 }
 
-.featured div.item:hover .featured-pic-overlay {
+div.item:hover .featured-pic-overlay {
     width:100%;
     height:100%;
     position:absolute;
@@ -245,18 +245,18 @@ div.cart .cart-icon {
     opacity:0.5;
 }
 
-.featured div.item .add-to-cart {
+div.item .add-to-cart {
     display: none;
 }
 
-.featured div.item .add-to-cart img {
+div.item .add-to-cart img {
     width: 123px;
     height: 39px;
     margin-left: 65px;
     margin-top: 105px;
 }
 
-.featured div.item:hover .add-to-cart {
+div.item:hover .add-to-cart {
     display: block;
     width:100%;
     height:100%;
