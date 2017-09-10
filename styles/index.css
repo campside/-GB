@@ -28,7 +28,7 @@ button:hover {
 }
 
 .center {
-    max-width: 1140px;
+    width: 1140px;
     margin: 0 auto;
 }
 
@@ -88,7 +88,7 @@ button:hover {
 .header .search .search-button {
     display: inline-block;
     width: 40px;
-    background: url(images/elements/search.png) center no-repeat;
+    background: url(../images/elements/search.png) center no-repeat;
     border-left: 0;
 }
 
@@ -134,10 +134,10 @@ div.cart .cart-icon {
 }
 
 .slider {
-    background-image: url(images/slider.png);
+    background-image: url(../images/slider.png);
     background-color: lightgrey;
     height: 600px;
-    max-width: 1600px;
+    width: 1600px;
     margin: 0 auto;
 }
 
@@ -171,19 +171,19 @@ div.cart .cart-icon {
 }
 
 .banner-1-2 {
-    background-image: url(images/banners/banner-1-2.jpg);
+    background-image: url(../images/banners/banner-1-2.jpg);
 }
 
 .banner-1-1 {
-    background-image: url(images/banners/banner-1-1.jpg);
+    background-image: url(../images/banners/banner-1-1.jpg);
 }
 
 .banner-2-1 {
-    background-image: url(images/banners/banner-2-1.jpg);
+    background-image: url(../images/banners/banner-2-1.jpg);
 }
 
 .banner-2-2 {
-    background-image: url(images/banners/banner-2-2.jpg);
+    background-image: url(../images/banners/banner-2-2.jpg);
 }
 
 .banners > div > a > div:hover .banner-pic-overlay {
@@ -286,7 +286,7 @@ div.cart .cart-icon {
 }
 
 .featured-1 div.featured-pic {
-    background-image: url(images/goods/1.jpg);
+    background-image: url(../images/goods/1.jpg);
 }
 
 .featured-2 {
@@ -295,7 +295,7 @@ div.cart .cart-icon {
 }
 
 .featured-2 .featured-pic {
-    background-image: url(images/goods/2.jpg);
+    background-image: url(../images/goods/2.jpg);
 }
 
 .featured-3 {
@@ -304,7 +304,7 @@ div.cart .cart-icon {
 }
 
 .featured-3 .featured-pic {
-    background-image: url(images/goods/3.jpg);
+    background-image: url(../images/goods/3.jpg);
 }
 
 .featured-4 {
@@ -313,11 +313,11 @@ div.cart .cart-icon {
 }
 
 .featured-4 .featured-pic {
-    background-image: url(images/goods/4.jpg);
+    background-image: url(../images/goods/4.jpg);
 }
 
 .featured-5 .featured-pic {
-    background-image: url(images/goods/5.jpg);
+    background-image: url(../images/goods/5.jpg);
 }
 
 .featured-6 {
@@ -325,7 +325,7 @@ div.cart .cart-icon {
 }
 
 .featured-6 .featured-pic {
-    background-image: url(images/goods/6.jpg);
+    background-image: url(../images/goods/6.jpg);
 }
 
 .featured-7 {
@@ -333,7 +333,7 @@ div.cart .cart-icon {
 }
 
 .featured-7 .featured-pic {
-    background-image: url(images/goods/7.jpg);
+    background-image: url(../images/goods/7.jpg);
 }
 
 .featured-8 {
@@ -341,7 +341,7 @@ div.cart .cart-icon {
 }
 
 .featured-8 .featured-pic {
-    background-image: url(images/goods/8.jpg);
+    background-image: url(../images/goods/8.jpg);
 }
 
 .featured-info {
@@ -370,18 +370,18 @@ div.cart .cart-icon {
     height: 530px;
     width: 1140px;
     margin-bottom: 30px;
+    background-color: #222224;
 }
 
 .promotion-image {
     height: 530px;
     width: 760px;
     float: left;
-    background-image: url(images/promotion.jpg);
+    background-image: url(../images/promotion.jpg);
 }
 
 .promotion-details {
     height: 530px;
-    background-color: #222224;
     padding: 30px 10px 10px;
 }
 
@@ -398,15 +398,15 @@ div.cart .cart-icon {
 }
 
 .promotion-details .logo-delivery {
-    background-image: url(images/elements/delivery.png);
+    background-image: url(../images/elements/delivery.png);
 }
 
 .promotion-details .logo-discounts {
-    background-image: url(images/elements/discount.png);
+    background-image: url(../images/elements/discount.png);
 }
 
 .promotion-details .logo-quality {
-    background-image: url(images/elements/quality.png);
+    background-image: url(../images/elements/quality.png);
 }
 
 div.logo img {
@@ -426,10 +426,10 @@ div.logo img {
 
 .communication {
     height: 440px;
-    background: #888484 url(images/communication.jpg);
+    background: #888484 url(../images/communication.jpg);
     background-blend-mode: screen;
     text-align: center;
-    max-width: 1600px;
+    width: 1600px;
     margin: 0 auto 30px;
 }
 
@@ -542,7 +542,7 @@ div.logo img {
 }
 
 .pre-footer > .story {
-    width: 45%;
+    width: 42%;
     height: 400px;
     float: left;
     display: inline-block;
@@ -625,7 +625,7 @@ td a {
 }
 
 .socials > .fb {
-     background: white url(images/elements/socials/fb.png) no-repeat center;
+     background: white url(../images/elements/socials/fb.png) no-repeat center;
 }
 
 .socials > .fb:hover {
@@ -633,7 +633,7 @@ td a {
 }
 
 .socials > .pi {
-    background: white url(images/elements/socials/pi.png) center no-repeat;
+    background: white url(../images/elements/socials/pi.png) center no-repeat;
 }
 
 .socials > .pi:hover {
@@ -641,7 +641,7 @@ td a {
 }
 
 .socials > .gg {
-    background: white url(images/elements/socials/gg.png) center no-repeat;
+    background: white url(../images/elements/socials/gg.png) center no-repeat;
 }
 
 .socials > .gg:hover {
@@ -649,7 +649,7 @@ td a {
 }
 
 .socials > .in {
-    background: white url(images/elements/socials/in.png) center no-repeat;
+    background: white url(../images/elements/socials/in.png) center no-repeat;
 }
 
 .socials > .in:hover {

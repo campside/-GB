@@ -1,0 +1,41 @@
+/* NEW ARRIVALS */
+
+section.new-arrivals {
+    width: 1600px;
+    background-color: #f8f3f4;
+}
+
+
+/* PROMOTION */
+
+section.promotion {
+    width: 1600px;
+    margin: 0 auto;
+    height: 340px;
+}
+
+.promotion-details {
+    display: flex;
+    justify-content: space-between;
+    height: 340px;
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.promotion-details .detail {
+    float: left;
+    width: 350px;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.promotion-details .detail .logo {
+     float: none;
+     height: auto;
+     display: inline;
+ }
+
+.promotion-details .detail .logo img{
+    width: 65px;
+    height: 55px;
+}
