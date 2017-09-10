@@ -534,6 +534,7 @@ div.logo img {
     display: inline;
     background-color: #f16d7f;
     color: white;
+    margin-left: -2px;
 }
 
 .pre-footer {

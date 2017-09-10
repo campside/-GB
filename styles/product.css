@@ -2,9 +2,22 @@
 
 section.new-arrivals {
     width: 1600px;
+    height: 150px;
+    margin: 0 auto;
     background-color: #f8f3f4;
 }
 
+.new-arrivals .label {
+
+}
+
+.new-arrivals .links {
+
+}
+
+.new-arrivals .links a {
+
+}
 
 /* PROMOTION */
 
