@@ -5,6 +5,7 @@
 
 a {
     text-decoration: none;
+    color: #222224;
 }
 
 body {
@@ -54,6 +55,10 @@ button:hover {
 .brand .brand-logo {
     width: 80px;
     float: left;
+}
+
+.brand .logo-link {
+    color: #222222;
 }
 
 .brand span {
