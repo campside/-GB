@@ -1,7 +1,7 @@
 /* NEW ARRIVALS */
 
 section.new-arrivals {
-    width: 1600px;
+    max-width: 1600px;
     height: 150px;
     line-height: 150px;
     background-color: #f8f3f4;
@@ -45,7 +45,7 @@ section.main {
 
 .catalog {
     float: left;
-    width: 250px;
+    width: 270px;
     height: 700px;
     display: inline-block;
 }
@@ -63,7 +63,7 @@ section.main {
     text-transform: uppercase;
     font-weight: 700;
     text-align: left;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .catalog .panel {
@@ -74,9 +74,36 @@ section.main {
 
 /* MAIN FILTER-GOODS */
 
+div.sort label, div.show label {
+    height: 30px;
+    width: 70px;
+    background-color: #ffffff;
+    display: inline-block;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid #ebebeb;
+    border-radius: 0;
+    padding: 0;
+    float: left;
+    border-right: 0;
+}
+
+select#sort, select#show {
+    height: 30px;
+    width: 70px;
+    background-color: #ffffff;
+    display: inline-block;
+    border: 1px solid #ebebeb;
+    border-left: 0;
+    padding: 0;
+    float: left;
+    font-size: 15px;
+}
+
 div.filters-goods {
-    width: 870px;
+    width: 850px;
     margin-left: 20px;
+    margin-bottom: 40px;
     display: inline-block;
 }
 
@@ -89,7 +116,6 @@ div.filters-options {
     height: 110px;
     display: flex;
     justify-content: space-between;
-    padding-left: 10px;
     padding-right: 10px;
 }
 
@@ -102,15 +128,19 @@ div.filters-options {
     background-color: #f3f3f3;
     height: 50px;
     line-height: 50px;
-    width: 870px;
+    width: 850px;
+    padding-left: 25px;
 }
 
 .sort-show .sort {
     display: inline-block;
+    margin-top: 10px;
 }
 
 .sort-show .show {
     display: inline-block;
+    margin-left: 15px;
+
 }
 
 .filters .trending-now {
@@ -120,7 +150,22 @@ div.filters-options {
 
 .filters .size {
     display: inline-block;
-    width: 200px;
+    width: 300px;
+}
+
+.size div.chbox-line {
+    width: 300px;
+}
+
+.size .chbox {
+    display: inline-block;
+    width: 65px;
+}
+
+.chbox input {
+    width: 17px;
+    height: 17px;
+    top: 6px;
 }
 
 .filters .price {
@@ -199,9 +244,38 @@ input[type='range']:nth-child(1)::-webkit-slider-thumb{
 }
 
 .goods .line {
-    width: 870px;
+    width: 850px;
     display: flex;
     justify-content: space-between;
+}
+
+.goods-footer {
+    display: block;
+}
+
+.goods-footer .pagination{
+    height: 45px;
+    border: 1px solid #e1e1e1;
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 45px;
+}
+
+.goods-footer .pagination a {
+    width: 25px;
+    display: inline-block;
+    text-align: center;
+    color: #777777;
+    font-size: 16px;
+}
+
+div.goods-footer button {
+    background-color: transparent;
+    color: #f16d7f;
+    border: 1px solid #f16d7f;
+    width: 150px;
+    float: right;
 }
 
 /* PROMOTION */

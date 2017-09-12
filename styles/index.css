@@ -16,7 +16,7 @@ button {
     background-color: #f16d7f;
     border: none;
     color: white;
-    height: 40px;
+    height: 45px;
     padding-left: 30px;
     padding-right: 30px;
     text-align: center;
@@ -142,7 +142,7 @@ div.cart .cart-icon {
     background-image: url(../images/slider.png);
     background-color: lightgrey;
     height: 600px;
-    width: 1600px;
+    max-width: 1600px;
     margin: 0 auto;
 }
 
@@ -434,7 +434,7 @@ div.logo img {
     background: #888484 url(../images/communication.jpg);
     background-blend-mode: screen;
     text-align: center;
-    width: 1600px;
+    max-width: 1600px;
     margin: 0 auto 30px;
 }
 
@@ -567,7 +567,7 @@ div.logo img {
 }
 
 table {
-    margin-left: 50px;
+    margin-left: 60px;
     display: inline-block;
     margin-top: -3px;
 
@@ -619,46 +619,49 @@ td a {
 
 .footer .socials {
     float: right;
-    line-height: 80px;
     margin-top: 20px;
 }
 
-.socials > div {
+.socials > a > div {
     height: 40px;
     width: 40px;
     margin-left: 5px;
     float: left;
 }
 
-.socials > .fb {
+.socials > a {
+    display: inline-block;
+}
+
+.socials > a > .fb {
      background: white url(../images/elements/socials/fb.png) no-repeat center;
 }
 
-.socials > .fb:hover {
+.socials .fb:hover {
     background-color: #f16d7f;
 }
 
-.socials > .pi {
+.socials > a > .pi {
     background: white url(../images/elements/socials/pi.png) center no-repeat;
 }
 
-.socials > .pi:hover {
+.socials .pi:hover {
     background-color: #f16d7f;
 }
 
-.socials > .gg {
+.socials > a > .gg {
     background: white url(../images/elements/socials/gg.png) center no-repeat;
 }
 
-.socials > .gg:hover {
+.socials .gg:hover {
     background-color: #f16d7f;
 }
 
-.socials > .in {
+.socials > a > .in {
     background: white url(../images/elements/socials/in.png) center no-repeat;
 }
 
-.socials > .in:hover {
+.socials .in:hover {
     background-color: #f16d7f;
 }
 
