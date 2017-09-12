@@ -45,7 +45,7 @@ section.main {
 
 .catalog {
     float: left;
-    width: 270px;
+    width: 250px;
     height: 700px;
     display: inline-block;
 }
@@ -101,18 +101,17 @@ select#sort, select#show {
 }
 
 div.filters-goods {
-    width: 850px;
+    width: 870px;
     margin-left: 20px;
     margin-bottom: 40px;
     display: inline-block;
 }
 
 div.filters {
-    height: 200px;
+    height: 190px;
 }
 
 div.filters-options {
-    width: 870px;
     height: 110px;
     display: flex;
     justify-content: space-between;
@@ -128,7 +127,6 @@ div.filters-options {
     background-color: #f3f3f3;
     height: 50px;
     line-height: 50px;
-    width: 850px;
     padding-left: 25px;
 }
 
@@ -244,7 +242,6 @@ input[type='range']:nth-child(1)::-webkit-slider-thumb{
 }
 
 .goods .line {
-    width: 850px;
     display: flex;
     justify-content: space-between;
 }
