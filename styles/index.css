@@ -28,6 +28,10 @@ button:hover {
     background-color: #f14f5f;
 }
 
+button:active {
+    background-color: #a23644;
+}
+
 .center {
     width: 1140px;
     margin: 0 auto;

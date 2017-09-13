@@ -178,3 +178,15 @@ button.add-to-cart {
     height: 55px;
     margin-top: 50px;
 }
+
+button.add-to-cart:hover {
+     background-color: #f16d7f;
+     color: white;
+     border: 1px solid white;
+ }
+
+button.add-to-cart:active {
+    background-color: #ef5b70;
+    color: white;
+    border: 1px solid white;
+}
