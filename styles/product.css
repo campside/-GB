@@ -72,6 +72,17 @@ section.main {
     display: none;
 }
 
+.catalog .panel ul > li {
+    height: 40px;
+    font-size: 14px;
+    color: #6f6e6e;
+}
+
+.catalog .panel ul > li:hover {
+    color: #484748;
+}
+
+
 /* MAIN FILTER-GOODS */
 
 div.sort label, div.show label {
