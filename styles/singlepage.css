@@ -5,6 +5,33 @@ section.new-arrivals {
 }
 
 /* Unique */
+
+.item-image-slider {
+    text-align: center;
+}
+
+.item-image-slider .right, .left {
+    height: 50px;
+    width: 50px;
+    background-color: lightgray;
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 300px;
+}
+
+.item-image-slider .right {
+    float: right;
+}
+
+.item-image-slider .left {
+    float: left;
+}
+
+.item-image-slider img {
+    height: 681px;
+    margin: 0 auto;
+}
+
 section.main {
     max-width: 1600px;
     width: auto;
@@ -13,7 +40,7 @@ section.main {
 
 .main .item-image-slider {
     height: 780px;
-    background-color: #eaeaea;
+    background-color: #f7f7f7;
 }
 
 .item-description {
