@@ -1,0 +1,119 @@
+section.main {
+  max-width: 1140px; }
+
+.cart .goods {
+  height: auto; }
+.cart .product, .cart .header {
+  height: 200px;
+  box-shadow: none;
+  border-bottom: 1px solid #e1e1e1; }
+.cart .header {
+  height: 100px; }
+  .cart .header > div {
+    float: left;
+    text-transform: uppercase;
+    width: 150px;
+    line-height: 100px;
+    font-size: 16px;
+    font-weight: 900; }
+  .cart .header .product-details {
+    width: 320px; }
+  .cart .header .unite-price, .cart .header .quantity, .cart .header .shipping, .cart .header .subtotal {
+    width: 170px;
+    text-align: center; }
+  .cart .header .action {
+    width: 140px;
+    text-align: center; }
+.cart li.product > div {
+  height: 200px; }
+.cart li.product div.picture-description {
+  padding-top: 15px;
+  width: 320px;
+  float: left; }
+  .cart li.product div.picture-description .picture {
+    height: 170px;
+    float: left; }
+    .cart li.product div.picture-description .picture img {
+      height: 160px;
+      margin-right: 15px; }
+  .cart li.product div.picture-description .description {
+    display: inline-block;
+    height: 155px;
+    width: 150px; }
+    .cart li.product div.picture-description .description .name {
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: 800;
+      line-height: 90px; }
+    .cart li.product div.picture-description .description .color p, .cart li.product div.picture-description .description .size p {
+      display: inline-block;
+      line-height: 20px;
+      color: #000000; }
+    .cart li.product div.picture-description .description p.color-value, .cart li.product div.picture-description .description p.size-value {
+      color: #898989;
+      font-weight: 900; }
+.cart li.product div.item-details {
+  height: 200px;
+  line-height: 200px;
+  font-size: 18px;
+  text-align: center; }
+  .cart li.product div.item-details .detail {
+    display: inline-block;
+    width: 170px;
+    height: 185px;
+    float: left; }
+  .cart li.product div.item-details .action {
+    width: 140px; }
+  .cart li.product div.item-details .quantity input {
+    width: 100px;
+    font-size: 20px;
+    text-align: center; }
+  .cart li.product div.item-details .action a img {
+    display: inline-block;
+    height: 25px;
+    width: 25px; }
+.cart div.goods-control {
+  height: 150px;
+  padding-top: 60px; }
+  .cart div.goods-control button {
+    background-color: transparent;
+    border: 1px solid #e6e6e6;
+    color: #484748;
+    height: 50px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 16px; }
+  .cart div.goods-control button.clear {
+    float: left; }
+  .cart div.goods-control button.continue {
+    float: right; }
+  .cart div.goods-control button:hover {
+    background-color: #f14f5f;
+    color: #e1e1e1; }
+
+form.checkout {
+  display: flex;
+  justify-content: space-between;
+  height: 450px;
+  width: 1140px;
+  margin-top: 15px; }
+  form.checkout > div {
+    width: 360px; }
+    form.checkout > div h1 {
+      font-size: 22px;
+      line-height: 40px;
+      text-transform: uppercase;
+      font-weight: 800; }
+  form.checkout select, form.checkout input {
+    width: 100%;
+    margin-top: 10px;
+    height: 45px;
+    display: block;
+    background-color: #ffffff;
+    border: 1px solid #ebebeb;
+    padding-left: 10px; }
+  form.checkout .proceed {
+    background-color: #e6e6e6;
+    height: 220px; }
+
+/*# sourceMappingURL=cart.css.map */

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,GAAG;EACC,MAAM,EAAE,MAAM",
+"sources": ["../sass/checkout.sass"],
+"names": [],
+"file": "checkout.css"
+}
