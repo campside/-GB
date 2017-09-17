@@ -31,6 +31,10 @@ section.new-arrivals .links a {
     color: #777777;
 }
 
+section.new-arrivals .links a:hover {
+    color: #a23644;
+}
+
 section.new-arrivals .links a:active {
     text-transform: uppercase;
     color: #f16d7f;

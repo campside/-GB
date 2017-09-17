@@ -94,7 +94,7 @@ section.main {
 form.checkout {
   display: flex;
   justify-content: space-between;
-  height: 450px;
+  height: 350px;
   width: 1140px;
   margin-top: 15px; }
   form.checkout > div {
@@ -112,8 +112,30 @@ form.checkout {
     background-color: #ffffff;
     border: 1px solid #ebebeb;
     padding-left: 10px; }
+    form.checkout select:hover, form.checkout input:hover {
+      background-color: #e6e6e6; }
   form.checkout .proceed {
-    background-color: #e6e6e6;
+    background-color: #f5f3f3;
     height: 220px; }
+    form.checkout .proceed .total {
+      width: 300px;
+      margin: 0 auto 20px;
+      padding-bottom: 20px;
+      padding-top: 20px;
+      text-align: right;
+      border-bottom: 1px #898989 solid; }
+      form.checkout .proceed .total p {
+        display: inline-block;
+        margin-left: 10px;
+        line-height: 30px;
+        text-transform: uppercase; }
+  form.checkout .grand-total {
+    font-size: 20px;
+    font-weight: 800; }
+  form.checkout button {
+    width: 300px;
+    margin: 0 auto;
+    display: block;
+    text-transform: uppercase; }
 
 /*# sourceMappingURL=cart.css.map */
