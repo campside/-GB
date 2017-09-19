@@ -67,7 +67,12 @@ section.main {
     text-transform: uppercase;
     font-weight: 700;
     text-align: left;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.catalog button:hover {
+    background-color: ivory;
 }
 
 .catalog .panel {
@@ -76,14 +81,17 @@ section.main {
     display: none;
 }
 
-.catalog .panel ul > li {
+.catalog .panel ul > a {
     height: 40px;
-    font-size: 14px;
+    display: block;
     color: #6f6e6e;
+    line-height: 40px;
+    text-align: center;
 }
 
-.catalog .panel ul > li:hover {
+.catalog .panel ul > a:hover {
     color: #484748;
+    background-color: #eaeaea;
 }
 
 /* MAIN FILTER-GOODS */

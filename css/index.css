@@ -61,6 +61,14 @@ button:active {
     float: left;
 }
 
+div.brand-logo img:hover  {
+    transform: rotate(360deg);
+}
+
+div.brand-logo img  {
+    transition: transform .8s ease-in-out;
+}
+
 .brand .logo-link {
     color: #222222;
 }
@@ -153,7 +161,6 @@ div.cart .cart-icon {
 
 .slider {
     background-image: url(../images/slider.png);
-    background-color: lightgrey;
     height: 600px;
     max-width: 1600px;
     margin: 0 auto;
@@ -245,6 +252,26 @@ div.item {
     float: left;
 }
 
+div.item div.featured-pic {
+    position: relative;
+    overflow: hidden;
+}
+
+div.item div.featured-pic img.picture {
+    z-index: -10;
+    transition: all 0.3s;
+    position: relative;
+}
+
+div.item:hover img.picture {
+    transform: scale(1.2);
+    background-color: #222222;
+}
+
+img.cart:hover {
+    box-shadow: 0 0 6px rgb(255, 246, 95);
+}
+
 div.item:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -301,10 +328,6 @@ div.item:hover .add-to-cart {
 
 .featured-1 {
     margin-bottom: 20px;
-}
-
-.featured-1 div.featured-pic {
-    background-image: url(../images/goods/1.jpg);
 }
 
 .featured-2 {
