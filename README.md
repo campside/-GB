@@ -1,2 +1,3 @@
-Курс "Профессиональная вёрстка"
+Курс GeekBrains University "Профессиональная вёрстка"
+
 https://campside.github.io/Verstka-GB/
