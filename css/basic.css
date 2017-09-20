@@ -1,3 +1,7 @@
+.center {
+  width: 1140px;
+  margin: 0 auto; }
+
 form input[type=checkbox] {
   display: inline-block; }
 form select, form input {
@@ -40,8 +44,8 @@ form label {
 
 a {
   text-decoration: none;
-  color: #222224; }
+  color: #898989; }
   a:hover {
-    color: #e1e1e1; }
+    color: #222222; }
 
 /*# sourceMappingURL=basic.css.map */
