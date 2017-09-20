@@ -162,7 +162,7 @@ form.options {
     text-transform: uppercase;
 }
 
-.main .item-description .select-options > div > select, input {
+.select-options select, input {
     width: 150px;
     margin-top: 10px;
     display: inline-block;

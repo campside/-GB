@@ -6,6 +6,7 @@
     <meta name="Author" lang="ru" content="Чирков Михаил"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="css/basic.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/product.css">
@@ -127,12 +128,11 @@
             <div class="content">
 
                 <div class="content-main">
-                    <form action="#" class="shipping">
+                    <form class="shipping" action="#" class="shipping">
                         <div class="disclaimer">
                             <h2>Checkout as a guest or registered user</h2>
                             <span>Register with us and save time in future forever and ever</span>
                         </div>
-                        <fieldset>
                             <div>
                                 <input class="checkbox" type="checkbox" id="guest" name="interest" value="coding">
                                 <label for="guest">Checkout as a guest</label>
@@ -151,9 +151,8 @@
                             </div>
 
                             <div>
-                                <input class="checkout" type="button" value="CONTINUE">
+                                <button class="checkout">Continue</button>
                             </div>
-                        </fieldset>
                     </form>
                 </div><!-- content-main -->
 
@@ -161,6 +160,17 @@
                     <div class="disclaimer">
                         <h2>Already registered?</h2>
                         <span>Please login below</span>
+                        <form class="login" action="#">
+                            <label class="input" for="email">Email address</label>
+                            <span style="color: red; font-size: 20px;">*</span>
+                            <input id="email" class="basic" type="email" required>
+                            <label class="input" for="password">Password</label>
+                            <span style="color: red; font-size: 20px;">*</span>
+                            <input id="password" class="basic" type="password" required>
+                            <div style="color: red; font-size: 15px;">* Required fields</div>
+                            <button class="checkout">Log in</button>
+                            <a href="#" style="margin-left: 10px">Забыли пароль?</a>
+                        </form>
                     </div>
                 </div><!-- content-login -->
 

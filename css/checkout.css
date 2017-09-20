@@ -32,25 +32,20 @@ div.content-main {
   display: inline-block;
   width: 600px; }
 
-form {
-  margin-left: 40px; }
-  form input[type=button]:hover {
-    background-color: #e6e6e6; }
+div.content-login {
+  width: 400px; }
 
 div.disclaimer {
   line-height: 25px;
   margin-top: 20px;
   margin-bottom: 20px; }
   div.disclaimer h2 {
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 900;
     text-transform: uppercase; }
   div.disclaimer span, div.disclaimer ul {
     margin-top: 15px;
     font-size: 13px;
     color: #898989; }
-  div.disclaimer ul {
-    line-height: 12px;
-    margin-bottom: 10px; }
 
 /*# sourceMappingURL=checkout.css.map */
