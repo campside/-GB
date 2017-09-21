@@ -2,6 +2,10 @@
   width: 1140px;
   margin: 0 auto; }
 
+div.line {
+  display: flex;
+  justify-content: space-between; }
+
 form input[type=checkbox] {
   display: inline-block; }
 form select, form input {
