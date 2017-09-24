@@ -155,10 +155,12 @@ div.cart .cart-icon {
 }
 
 .slider {
-    background-image: url(../images/slider.png);
-    height: 600px;
     max-width: 1600px;
     margin: 0 auto;
+}
+
+.slider img {
+    width: 100%;
 }
 
 .banners {
