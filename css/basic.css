@@ -1,44 +1,56 @@
+body {
+  font-family: Lato, sans-serif; }
+
+* {
+  box-sizing: border-box;
+  outline: none; }
+
+a {
+  text-decoration: none;
+  color: #898989; }
+  a:hover {
+    color: #222222; }
+
 .center {
   max-width: 1140px;
   margin: 0 auto; }
 
-div.line {
-  display: flex;
-  justify-content: space-between; }
+.flex {
+  display: flex; }
+  .flex.space {
+    justify-content: space-between; }
+
+button {
+  border: none;
+  height: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
+  font-size: 15px; }
+  button.basic {
+    background-color: #f16d7f;
+    color: white; }
+    button.basic:hover {
+      background-color: #f1a49a; }
+  button.checkout {
+    border: 1px solid #ebebeb;
+    background-color: transparent;
+    color: #222222; }
+    button.checkout:hover {
+      color: white;
+      background-color: #e6e6e6; }
 
 form input[type=checkbox] {
   display: inline-block; }
 form select, form input {
-  display: block;
+  font-size: 15px;
   padding-left: 10px;
   padding-right: 10px; }
   form select.basic, form input.basic {
-    margin-top: 10px;
-    width: 100%;
-    height: 45px;
+    height: 40px;
     background-color: #ffffff;
     border: 1px solid #ebebeb; }
     form select.basic:hover, form input.basic:hover {
-      background-color: #e6e6e6; }
-form button {
-  border: none;
-  margin-top: 10px;
-  width: 150px;
-  height: 45px;
-  padding-left: 30px;
-  padding-right: 30px;
-  text-align: center;
-  display: inline-block;
-  font-size: 15px; }
-  form button.basic {
-    background-color: #f16d7f;
-    color: white; }
-  form button.checkout {
-    border: 1px solid #ebebeb;
-    background-color: transparent;
-    color: #222222; }
-    form button.checkout:hover {
-      color: white;
       background-color: #e6e6e6; }
 form label {
   font-size: 15px;
@@ -46,10 +58,86 @@ form label {
   form label.input {
     text-transform: uppercase; }
 
-a {
+.header {
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.17); }
+
+.brand {
+  width: 185px;
+  height: 100px; }
+  @media (max-width: 768px) {
+    .brand {
+      width: 90px; } }
+  .brand .brand-logo {
+    float: left;
+    padding-top: 15px; }
+    @media (max-width: 768px) {
+      .brand .brand-logo {
+        display: none; } }
+  .brand span {
+    color: #222222;
+    margin-left: 15px;
+    font-size: 25px; }
+    .brand span b {
+      font-weight: bold;
+      color: #f16d7f; }
+
+.search .search-input {
+  width: 320px; }
+.search .search-button {
+  width: 40px;
+  padding: 0;
+  background-color: transparent;
+  border: 1px solid #ebebeb;
+  border-left: none; }
+  .search .search-button:hover {
+    background-color: #e6e6e6; }
+  .search .search-button:active {
+    background-color: #afafaf; }
+
+div.cart {
+  margin-right: 15px; }
+  div.cart .cart-icon {
+    float: left;
+    padding: 10px 15px 5px 5px; }
+    @media (max-width: 768px) {
+      div.cart .cart-icon {
+        display: none; } }
+
+/* DROPDOWN */
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block; }
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1; }
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
   text-decoration: none;
-  color: #898989; }
-  a:hover {
-    color: #222222; }
+  display: block; }
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1; }
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block; }
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41; }
 
 /*# sourceMappingURL=basic.css.map */
