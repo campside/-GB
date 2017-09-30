@@ -1,17 +1,4 @@
-$font_xs: 13px
-$font_s: 15px
-$font_m: 17px
-$font_l: 19px
-$font_xl: 25px
-
-$hor_max: 1140px
-$pad_vert: 768px
-$pad_hor: 1024px
-
-$basic_pink: #f16d7f
-$hover_pink: #f1a49a
-$menu: #e1e1e1
-$menu_hover: #f5f5f5
+@import "constants"
 
 body
     font-family: Lato, sans-serif
@@ -33,13 +20,14 @@ a
 .flex
     display: flex
     justify-content: space-between
+    @media (max-width: $pad_hor)
+        justify-content: space-around
 
 
 button
     border: none
     height: 40px
-    padding-left: 30px
-    padding-right: 30px
+    padding: 0px 30px
     text-align: center
     font-size: $font_s
     &.basic
@@ -84,26 +72,32 @@ form
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.17)
 
 .brand
-    width: 185px
+    width: 200px
     height: 100px
     @media (max-width: $pad_vert)
-        width: 90px
+        width: 130px
+        text-align: center
     .brand-logo
         float: left
         padding-top: 15px
         @media (max-width: $pad_vert)
             display: none
+
     span
         color: #222222
         margin-left: 15px
         font-size: $font_xl
+        @media (max-width: $pad_vert)
+            margin: 0
         b
             font-weight: bold
             color: $basic_pink
 
 .search
     .search-input
-        width: 320px
+        width: 310px
+        @media (max-width: $pad_hor)
+            width: 200px
     .search-button
         width: 40px
         padding: 0
@@ -114,9 +108,17 @@ form
             background-color: #e6e6e6
         &:active
             background-color: #afafaf
+    .browse-button
+        border-right: none
+        @media (max-width: $pad_hor)
+            display: none
+
 
 div.cart
-    margin-right: 15px
+    width: 200px
+    text-align: center
+    @media (max-width: $pad_hor)
+        width: auto
     .cart-icon
         float: left
         padding: 10px 15px 5px 5px
@@ -148,6 +150,8 @@ div.cart
     @media (max-width: $pad_vert)
         div:nth-last-of-type(1)
             display: none
+        div:nth-last-of-type(2)
+            display: none
 
 .dropdown:hover
     .dropdown-content
@@ -172,4 +176,94 @@ div.cart
             background-color: $menu_hover
 
 // Navbar - end
+// Pre-Footer
 
+.pre-footer
+    margin-bottom: 30px
+    > .story
+        width: 42%
+        height: 400px
+        float: left
+        display: inline-block
+        line-height: 24px
+
+.story
+    .story-part
+        display: block
+        color: #898989
+        font-weight: 300
+    .brand span
+        margin-top: 0
+        line-height: 50px
+
+table
+    margin-left: 60px
+    display: inline-block
+    margin-top: -3px
+    th
+        text-transform: uppercase
+        color: #f16d7f
+        font-weight: 900
+        text-align: left
+        font-size: 18px
+
+thead th
+    &:nth-child(1)
+        width: 30%
+    &:nth-child(2)
+        width: 20%
+    &:nth-child(3)
+        width: 15%
+    &:nth-child(4)
+        width: 35%
+
+th
+    padding: 20px 20px 20px 40px
+    font-size: 16px
+
+td
+    padding: 20px 20px 20px 40px
+    font-size: 16px
+    a
+        color: #898989
+
+//Pre-Footer - end
+// Footer
+
+.footer
+    height: 80px
+    background-color: #e6e6e6
+    .copyright
+        line-height: 80px
+        color: #777777
+        float: left
+    .socials
+        float: right
+        margin-top: 20px
+
+.socials
+    > a
+        display: inline-block
+        > div
+            height: 40px
+            width: 40px
+            margin-left: 5px
+            float: left
+    .fb
+        background: white url(../images/elements/socials/fb.png) center no-repeat
+        &:hover
+            background-color: #f16d7f
+    .pi
+        background: white url(../images/elements/socials/pi.png) center no-repeat
+        &:hover
+            background-color: #f16d7f
+    .gg
+        background: white url(../images/elements/socials/gg.png) center no-repeat
+        &:hover
+            background-color: #f16d7f
+    .in
+        background: white url(../images/elements/socials/in.png) center no-repeat
+        &:hover
+            background-color: #f16d7f
+
+// Footer - end
