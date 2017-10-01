@@ -127,8 +127,10 @@ div.cart {
   height: 50px; }
 
 .menu {
-  max-width: 768px;
-  margin: 0 auto; }
+  width: 768px;
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: auto; }
   .menu a.menu-item {
     display: block;
     padding: 10px 17px;

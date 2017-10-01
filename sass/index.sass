@@ -16,6 +16,8 @@
         margin-right: 20px
     @media (max-width: $pad_vert)
         margin-top: 20px
+    @media (max-width: $phone)
+        flex-wrap: wrap
 
 .banner-1
     width: 560px
@@ -23,10 +25,15 @@
 .banner-2
     width: 560px
     margin-left: 20px
+    @media (max-width: $phone)
+        margin-left: 0px
+        margin-top: 20px
 
 .banner-1-1, .banner-2-1
     position: relative
     height: 540px
+    @media (max-width: $phone)
+        height: 260px
 
 .banner-1-2, .banner-2-2
     position: relative
@@ -40,9 +47,13 @@
 
 .banner-1-1
     background: url(../images/banners/banner-1-1.jpg) right
+    @media (max-width: $phone)
+        background: url(../images/banners/banner-1-1.jpg) right top
 
 .banner-2-1
     background: url(../images/banners/banner-2-1.jpg) center
+    @media (max-width: $phone)
+        background: url(../images/banners/banner-2-1.jpg) top
 
 .banner-2-2
     background: url(../images/banners/banner-2-2.jpg) center
