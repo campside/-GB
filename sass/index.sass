@@ -109,6 +109,7 @@
             overflow: auto
             white-space: nowrap
         .item
+            height: 350px
             margin-bottom: 25px
             @media (max-width: $pad_hor)
                 margin-left: 15px
@@ -121,9 +122,9 @@
 
 
 .featured-info
-    font-size: 20px
+    font-size: $font_m
     padding: 5px
-    line-height: 25px
+    line-height: 30px
     color: $basic_dark
     > .title, .price
         display: block
@@ -164,90 +165,3 @@ div.logo img
     font-weight: 800
     .description
         font-weight: lighter
-
-.communication
-    display: flex
-    background: #888484 url(../images/communication.jpg)
-    background-blend-mode: screen
-    text-align: center
-    max-width: 1600px
-    margin: 0 auto 30px
-
-.feedback
-    height: 440px
-    padding-top: 100px
-    display: inline-block
-    position: relative
-    .feedback-item
-        height: 160px
-        margin: 0 auto
-
-.feedback-item
-    .ava
-        display: block
-        width: 125px
-        height: 160px
-        float: left
-    .picture
-        height: 85px
-        width: 85px
-        border-radius: 50%
-        box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19)
-    .quote
-        text-align: left
-        line-height: 25px
-        font-style: italic
-    .who
-        margin-top: 10px
-        text-align: left
-        line-height: 20px
-    .name
-        color: #f16d7f
-        font-weight: 900
-    .place
-        font-size: 15px
-
-.subscribe
-    height: 440px
-    padding-top: 125px
-    width: 50%
-    display: inline-block
-    position: relative
-
-.subscribe-input
-    float: left
-
-.subscribe-item .subscribe-text
-    line-height: 35px
-    text-transform: uppercase
-    text-align: center
-
-.subscribe-text .title
-    font-size: 25px
-
-.subscribe-form
-    width: 432px
-    margin: 15px auto 0
-    input
-        text-align: center
-        font-size: 15px
-    .subscribe-input
-        border-radius: 50px 0 0 50px
-        width: 330px
-        height: 50px
-        border: 0
-        color: #222222
-        display: inline
-        background-color: #e1e1e1
-        padding-left: 25px
-        padding-right: 25px
-    .subscribe-submit
-        border-radius: 0 50px 50px 0
-        border: 0
-        width: 100px
-        height: 50px
-        padding: 0
-        display: inline
-        background-color: #f16d7f
-        color: white
-        margin-left: -2px

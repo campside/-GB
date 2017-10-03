@@ -22,6 +22,9 @@ a
     justify-content: space-between
     @media (max-width: $pad_hor)
         justify-content: space-around
+    &_around
+        display: flex
+        justify-content: space-around
 
 button
     border: none
@@ -97,6 +100,8 @@ form
         width: 310px
         @media (max-width: $pad_hor)
             width: 200px
+        @media (max-width: $phone)
+            display: none
     .search-button
         width: 40px
         padding: 0
@@ -107,6 +112,8 @@ form
             background-color: #e6e6e6
         &:active
             background-color: #afafaf
+        @media (max-width: $phone)
+            display: none
     .browse-button
         border-right: none
         @media (max-width: $pad_hor)
@@ -132,7 +139,7 @@ div.cart
     height: 50px
 
 .menu
-    width: $pad_vert
+    max-width: $pad_vert
     margin: 0 auto
     white-space: nowrap
     overflow: auto
@@ -177,6 +184,91 @@ div.cart
             background-color: $menu_hover
 
 // Navbar - end
+// Communication
+
+.communication
+    background: #888484 url(../images/communication.jpg)
+    background-blend-mode: screen
+    max-width: $max_width
+    margin: 0 auto 30px
+
+.feedback
+    padding-top: 125px
+    @media (max-width: $pad_hor)
+        display: none
+
+.feedback-item
+    display: flex
+    .ava
+        display: inline-block
+        margin-right: 20px
+        .picture
+            height: 85px
+            width: 85px
+            border-radius: 50%
+            box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19)
+    .feedback-item-content
+        display: inline-block
+        .quote
+            text-align: left
+            width: 400px
+            line-height: 25px
+            font-style: italic
+        .who
+            margin-top: 10px
+            text-align: left
+            line-height: 20px
+        .name
+            color: #f16d7f
+            font-weight: 900
+        .place
+            font-size: 15px
+
+.subscribe
+    height: 440px
+    padding-top: 125px
+    display: inline-block
+    position: relative
+
+.subscribe-input
+    float: left
+
+.subscribe-item .subscribe-text
+    line-height: 35px
+    text-transform: uppercase
+    text-align: center
+
+.subscribe-text .title
+    font-size: 25px
+
+.subscribe-form
+    width: 432px
+    margin: 15px auto 0
+    input
+        text-align: center
+        font-size: 15px
+    .subscribe-input
+        border-radius: 50px 0 0 50px
+        width: 330px
+        height: 50px
+        border: 0
+        color: #222222
+        display: inline
+        background-color: #e1e1e1
+        padding-left: 25px
+        padding-right: 25px
+    .subscribe-submit
+        border-radius: 0 50px 50px 0
+        border: 0
+        width: 100px
+        height: 50px
+        padding: 0
+        display: inline
+        background-color: #f16d7f
+        color: white
+        margin-left: -2px
+
+// Communication - end
 // Pre-Footer
 
 .pre-footer
@@ -189,6 +281,10 @@ div.cart
         line-height: 24px
 
 .story
+    width: 430px
+    line-height: 24px
+    @media (max-width: $pad_hor)
+        display: none
     .story-part
         display: block
         color: #898989
