@@ -6,6 +6,7 @@
     <meta name="Author" lang="ru" content="Чирков Михаил"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="css/fontawesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/basic.css">
     <link rel="stylesheet" href="css/index.css">
@@ -18,7 +19,7 @@
 
     <header class="header">
 
-        <div class="header-center">
+        <div class="center flex">
 
             <div class="brand">
                 <a href="index.html" class="logo-link">
@@ -30,8 +31,9 @@
             </div>
 
             <div class="search">
-                <input type="text" class="search-input" placeholder="Search for item..."><input type="button"
-                                                                                                class="search-button">
+                <form action="#">
+                    <button class="browse-button checkout">Browse</button><input type="text" class="basic search-input" placeholder="Search for item..."><button type="basic" class="search-button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </form>
             </div>
 
             <div class="cart">
@@ -40,10 +42,10 @@
                         <img src="images/elements/cart.png"/>
                     </a>
                 </div>
-                <button>MyAccount</button>
+                <button class="basic">MyAccount</button>
             </div>
 
-        </div><!-- header-center -->
+        </div><!-- center -->
 
     </header><!-- header -->
 

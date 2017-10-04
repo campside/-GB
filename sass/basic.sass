@@ -1,55 +1,377 @@
-.center
-    max-width: 1140px
-    margin: 0 auto
+@import "constants"
 
-div.line
-    display: flex
-    justify-content: space-between
+body
+    font-family: Lato, sans-serif
 
-form
-    input[type=checkbox]
-        display: inline-block
-    select, input
-        display: block
-        padding-left: 10px
-        padding-right: 10px
-        &.basic
-            margin-top: 10px
-            width: 100%
-            height: 45px
-            background-color: #ffffff
-            border: 1px solid #ebebeb
-            &:hover
-                background-color: #e6e6e6
-
-    button
-        border: none
-        margin-top: 10px
-        width: 150px
-        height: 45px
-        padding-left: 30px
-        padding-right: 30px
-        text-align: center
-        display: inline-block
-        font-size: 15px
-        &.basic
-            background-color: #f16d7f
-            color: white
-        &.checkout
-            border: 1px solid #ebebeb
-            background-color: transparent
-            color: #222222
-            &:hover
-                color: white
-                background-color: #e6e6e6
-    label
-        font-size: 15px
-        font-weight: 900
-        &.input
-            text-transform: uppercase
+*
+    box-sizing: border-box
+    outline: none
 
 a
     text-decoration: none
     color: #898989
     &:hover
         color:  #222222
+
+.center
+    max-width: $hor_max
+    margin: 0 auto
+
+.flex
+    display: flex
+    justify-content: space-between
+    @media (max-width: $pad_hor)
+        justify-content: space-around
+    &_around
+        display: flex
+        justify-content: space-around
+
+button
+    border: none
+    height: 40px
+    padding: 0px 30px
+    text-align: center
+    font-size: $font_s
+    &.basic
+        background-color: $basic_pink
+        color: white
+        &:hover
+            background-color: $hover_pink
+    &.checkout
+        border: 1px solid #ebebeb
+        background-color: transparent
+        color: #222222
+        &:hover
+            color: white
+            background-color: #e6e6e6
+
+form
+    input[type=checkbox]
+        display: inline-block
+    select, input
+        font-size: $font_s
+        padding-left: 10px
+        padding-right: 10px
+        &.basic
+            height: 40px
+            background-color: #ffffff
+            border: 1px solid #ebebeb
+            &:hover
+                background-color: #e6e6e6
+
+    label
+        font-size: 15px
+        font-weight: 900
+        &.input
+            text-transform: uppercase
+
+// Header
+
+header
+    position: fixed
+    z-index: 10
+    top: 0
+    width: 100%
+    height: 100px
+    line-height: 100px
+    background-color: white
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.17)
+
+.brand
+    width: 200px
+    height: 100px
+    @media (max-width: $pad_vert)
+        width: 130px
+        text-align: center
+    .brand-logo
+        float: left
+        padding-top: 15px
+        @media (max-width: $pad_vert)
+            display: none
+
+    span
+        color: #222222
+        margin-left: 15px
+        font-size: $font_xl
+        @media (max-width: $pad_vert)
+            margin: 0
+        b
+            font-weight: bold
+            color: $basic_pink
+
+.search
+    .search-input
+        width: 310px
+        @media (max-width: $pad_hor)
+            width: 200px
+        @media (max-width: $phone)
+            display: none
+    .search-button
+        width: 40px
+        padding: 0
+        background-color: transparent
+        border: 1px solid #ebebeb
+        border-left: none
+        &:hover
+            background-color: #e6e6e6
+        &:active
+            background-color: #afafaf
+        @media (max-width: $phone)
+            display: none
+    .browse-button
+        border-right: none
+        @media (max-width: $pad_hor)
+            display: none
+
+div.cart
+    width: 200px
+    text-align: center
+    @media (max-width: $pad_hor)
+        width: auto
+    .cart-icon
+        float: left
+        padding: 10px 15px 5px 5px
+        @media (max-width: $phone_small)
+            display: none
+
+// Header - end
+// Navbar
+
+.nav
+    margin-top: 100px
+    height: 50px
+
+.menu
+    max-width: $pad_vert
+    margin: 0 auto
+    white-space: nowrap
+    overflow: auto
+    &.flex
+        @media (max-width: $pad_vert)
+            justify-content: space-between
+    a.menu-item
+        display: block
+        padding: 10px 17px
+        text-transform: uppercase
+        color: #222222
+        font-size: $font_s
+        font-weight: 700
+        line-height: 30px
+        &:hover
+            height: 50px
+            background-color: $menu
+            border-bottom: mediumvioletred 4px solid
+    @media (max-width: $pad_vert)
+        div:nth-last-of-type(1)
+            display: none
+        div:nth-last-of-type(2)
+            display: none
+
+.dropdown:hover
+    .dropdown-content
+        display: block
+    a.menu-item
+        height: 50px
+        background-color: $menu
+        border-bottom: mediumvioletred 4px solid
+
+.dropdown-content
+    display: none
+    position: absolute
+    background-color: $menu
+    min-width: 160px
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
+    z-index: 1
+    a
+        color: black
+        padding: 17px 20px
+        display: block
+        &:hover
+            background-color: $menu_hover
+
+// Navbar - end
+// Communication
+
+.communication
+    background: #888484 url(../images/communication.jpg)
+    background-blend-mode: screen
+    max-width: $max_width
+    margin: 0 auto 30px
+
+.feedback
+    padding-top: 125px
+    @media (max-width: $pad_hor)
+        display: none
+
+.feedback-item
+    display: flex
+    .ava
+        display: inline-block
+        margin-right: 20px
+        .picture
+            height: 85px
+            width: 85px
+            border-radius: 50%
+            box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19)
+    .feedback-item-content
+        display: inline-block
+        .quote
+            text-align: left
+            width: 400px
+            line-height: 25px
+            font-style: italic
+        .who
+            margin-top: 10px
+            text-align: left
+            line-height: 20px
+        .name
+            color: #f16d7f
+            font-weight: 900
+        .place
+            font-size: 15px
+
+.subscribe
+    height: 440px
+    padding-top: 125px
+    display: inline-block
+    position: relative
+
+.subscribe-input
+    float: left
+
+.subscribe-item .subscribe-text
+    line-height: 35px
+    text-transform: uppercase
+    text-align: center
+
+.subscribe-text .title
+    font-size: 25px
+
+.subscribe-form
+    margin: 15px auto 0
+    input
+        text-align: center
+        font-size: 15px
+    .subscribe-input
+        border-radius: 50px 0 0 50px
+        width: 330px
+        height: 50px
+        border: 0
+        color: #222222
+        display: inline
+        background-color: #e1e1e1
+        padding-left: 25px
+        padding-right: 25px
+        @media (max-width: $phone)
+            width: 200px
+    .subscribe-submit
+        border-radius: 0 50px 50px 0
+        border: 0
+        width: 100px
+        height: 50px
+        padding: 0
+        display: inline
+        background-color: #f16d7f
+        color: white
+        margin-left: -2px
+
+// Communication - end
+// Pre-Footer
+
+.pre-footer
+    margin-bottom: 30px
+    > .story
+        width: 42%
+        height: 400px
+        float: left
+        display: inline-block
+        line-height: 24px
+
+.story
+    width: 430px
+    line-height: 24px
+    @media (max-width: $pad_vert)
+        display: none
+    .story-part
+        display: block
+        color: #898989
+        font-weight: 300
+    .brand span
+        margin-top: 0
+        line-height: 50px
+
+table
+    display: inline-block
+    th
+        text-transform: uppercase
+        color: #f16d7f
+        font-weight: 900
+        text-align: left
+        font-size: 18px
+        @media (max-width: $phone)
+            display: none
+
+thead th
+    &:nth-child(1)
+        width: 30%
+    &:nth-child(2)
+        width: 20%
+    &:nth-child(3)
+        width: 15%
+    &:nth-child(4)
+        width: 35%
+
+th
+    padding: 20px 20px 20px 40px
+    font-size: 16px
+
+td
+    padding: 20px 20px 20px 40px
+    font-size: 16px
+    @media (max-width: $phone)
+        padding: 10px 10px 10px 20px
+    a
+        color: #898989
+
+//Pre-Footer - end
+// Footer
+
+.footer
+    height: 80px
+    background-color: #e6e6e6
+    .copyright
+        line-height: 80px
+        color: #777777
+        float: left
+        @media (max-width: $phone)
+            display: none
+    .socials
+        float: right
+        margin-top: 20px
+
+.socials
+    > a
+        display: inline-block
+        > div
+            height: 40px
+            width: 40px
+            margin-left: 5px
+            float: left
+    .fb
+        background: white url(../images/elements/socials/fb.png) center no-repeat
+        &:hover
+            background-color: #f16d7f
+    .pi
+        background: white url(../images/elements/socials/pi.png) center no-repeat
+        &:hover
+            background-color: #f16d7f
+    .gg
+        background: white url(../images/elements/socials/gg.png) center no-repeat
+        &:hover
+            background-color: #f16d7f
+    .in
+        background: white url(../images/elements/socials/in.png) center no-repeat
+        &:hover
+            background-color: #f16d7f
+
+// Footer - end
