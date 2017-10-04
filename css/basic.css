@@ -140,6 +140,9 @@ div.cart {
   margin: 0 auto;
   white-space: nowrap;
   overflow: auto; }
+  @media (max-width: 768px) {
+    .menu.flex {
+      justify-content: space-between; } }
   .menu a.menu-item {
     display: block;
     padding: 10px 17px;
@@ -315,6 +318,9 @@ th {
 td {
   padding: 20px 20px 20px 40px;
   font-size: 16px; }
+  @media (max-width: 414px) {
+    td {
+      padding: 10px 10px 10px 20px; } }
   td a {
     color: #898989; }
 
