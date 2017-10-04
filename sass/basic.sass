@@ -242,7 +242,6 @@ div.cart
     font-size: 25px
 
 .subscribe-form
-    width: 432px
     margin: 15px auto 0
     input
         text-align: center
@@ -257,6 +256,8 @@ div.cart
         background-color: #e1e1e1
         padding-left: 25px
         padding-right: 25px
+        @media (max-width: $phone)
+            width: 200px
     .subscribe-submit
         border-radius: 0 50px 50px 0
         border: 0
@@ -283,7 +284,7 @@ div.cart
 .story
     width: 430px
     line-height: 24px
-    @media (max-width: $pad_hor)
+    @media (max-width: $pad_vert)
         display: none
     .story-part
         display: block
@@ -294,15 +295,15 @@ div.cart
         line-height: 50px
 
 table
-    margin-left: 60px
     display: inline-block
-    margin-top: -3px
     th
         text-transform: uppercase
         color: #f16d7f
         font-weight: 900
         text-align: left
         font-size: 18px
+        @media (max-width: $phone)
+            display: none
 
 thead th
     &:nth-child(1)
@@ -334,6 +335,8 @@ td
         line-height: 80px
         color: #777777
         float: left
+        @media (max-width: $phone)
+            display: none
     .socials
         float: right
         margin-top: 20px

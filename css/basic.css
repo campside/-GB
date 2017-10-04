@@ -18,6 +18,9 @@ a {
 .flex {
   display: flex;
   justify-content: space-between; }
+  @media (max-width: 1024px) {
+    .flex {
+      justify-content: space-around; } }
   .flex_around {
     display: flex;
     justify-content: space-around; }
@@ -94,7 +97,7 @@ form label {
   @media (max-width: 1024px) {
     .search .search-input {
       width: 200px; } }
-  @media (max-width: 380px) {
+  @media (max-width: 414px) {
     .search .search-input {
       display: none; } }
 .search .search-button {
@@ -107,7 +110,7 @@ form label {
     background-color: #e6e6e6; }
   .search .search-button:active {
     background-color: #afafaf; }
-  @media (max-width: 380px) {
+  @media (max-width: 414px) {
     .search .search-button {
       display: none; } }
 .search .browse-button {
@@ -233,7 +236,6 @@ div.cart {
   font-size: 25px; }
 
 .subscribe-form {
-  width: 432px;
   margin: 15px auto 0; }
   .subscribe-form input {
     text-align: center;
@@ -248,6 +250,9 @@ div.cart {
     background-color: #e1e1e1;
     padding-left: 25px;
     padding-right: 25px; }
+    @media (max-width: 414px) {
+      .subscribe-form .subscribe-input {
+        width: 200px; } }
   .subscribe-form .subscribe-submit {
     border-radius: 0 50px 50px 0;
     border: 0;
@@ -271,7 +276,7 @@ div.cart {
 .story {
   width: 430px;
   line-height: 24px; }
-  @media (max-width: 1024px) {
+  @media (max-width: 768px) {
     .story {
       display: none; } }
   .story .story-part {
@@ -283,15 +288,16 @@ div.cart {
     line-height: 50px; }
 
 table {
-  margin-left: 60px;
-  display: inline-block;
-  margin-top: -3px; }
+  display: inline-block; }
   table th {
     text-transform: uppercase;
     color: #f16d7f;
     font-weight: 900;
     text-align: left;
     font-size: 18px; }
+    @media (max-width: 414px) {
+      table th {
+        display: none; } }
 
 thead th:nth-child(1) {
   width: 30%; }
@@ -319,6 +325,9 @@ td {
     line-height: 80px;
     color: #777777;
     float: left; }
+    @media (max-width: 414px) {
+      .footer .copyright {
+        display: none; } }
   .footer .socials {
     float: right;
     margin-top: 20px; }
