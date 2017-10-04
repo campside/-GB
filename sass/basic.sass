@@ -67,10 +67,14 @@ form
 
 // Header
 
-.header
+header
+    position: fixed
+    z-index: 10
+    top: 0
     width: 100%
     height: 100px
     line-height: 100px
+    background-color: white
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.17)
 
 .brand
@@ -119,7 +123,6 @@ form
         @media (max-width: $pad_hor)
             display: none
 
-
 div.cart
     width: 200px
     text-align: center
@@ -128,14 +131,14 @@ div.cart
     .cart-icon
         float: left
         padding: 10px 15px 5px 5px
-        @media (max-width: $pad_vert)
+        @media (max-width: $phone_small)
             display: none
 
 // Header - end
-
 // Navbar
 
-.navbar
+.nav
+    margin-top: 100px
     height: 50px
 
 .menu

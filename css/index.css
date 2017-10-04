@@ -10,7 +10,7 @@
 
 .banners {
   display: flex;
-  margin-top: 50px;
+  margin-top: 25px;
   margin-bottom: 50px; }
   @media (max-width: 1024px) {
     .banners {
@@ -18,7 +18,7 @@
       margin-right: 20px; } }
   @media (max-width: 768px) {
     .banners {
-      margin-top: 20px; } }
+      margin-top: 10px; } }
   @media (max-width: 414px) {
     .banners {
       flex-wrap: wrap; } }
