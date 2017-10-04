@@ -143,6 +143,7 @@
 
 
 // Featured - end
+// Promotion
 
 .promotion
     display: flex
@@ -155,21 +156,22 @@
 .promotion-details
     background-color: #222224
     padding: 30px 10px 10px
+    .detail-header
+        line-height: 60px
+        display: flex
+        justify-content: space-around
     .detail
         color: azure
         line-height: 25px
         .logo
-            width: 90px
-            float: left
-            text-align: center
-
-div.logo img
-    margin-top: 15px
-    width: 72%
-
-.promotion-details > .detail > .title
-    line-height: 75px
-    font-size: 31px
-    font-weight: 800
+            display: inline-block
+            img
+                width: 60px
+    .title
+        display: inline-block
+        font-size: 31px
+        font-weight: 800
     .description
         font-weight: lighter
+
+// Promotion - end
