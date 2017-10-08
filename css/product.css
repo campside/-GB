@@ -85,6 +85,9 @@ div.filters-goods {
   margin-left: 20px;
   margin-bottom: 40px;
   display: inline-block; }
+  @media (min-width: 1140px) {
+    div.filters-goods {
+      width: 75%; } }
   @media (max-width: 1024px) {
     div.filters-goods {
       display: block;
