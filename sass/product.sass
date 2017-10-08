@@ -1,237 +1,218 @@
+@import "constants"
+
 section
-  &.new-arrivals
-    max-width: 1600px
-    height: 150px
-    line-height: 150px
-    background-color: #f8f3f4
-    text-transform: uppercase
-    margin: 0 auto 30px
-    .wrapper
-      width: 1140px
-      margin: 0 auto
-    .label
-      font-size: 25px
-      font-weight: bold
-      color: #f16d7f
-      float: left
-    .links
-      float: right
-      font-size: 18px
-      a
+    &.new-arrivals
+        max-width: $max_width
+        height: 150px
+        line-height: 150px
+        background-color: $ligth_pink
         text-transform: uppercase
-        color: #777777
+        margin: 0 auto 30px
+    .wrapper
+        width: 1140px
+        margin: 0 auto
+    .label
+        font-size: 25px
+        font-weight: bold
+        color: #f16d7f
+        float: left
+        @media (max-width: $phone_hor)
+            display: none
+    .links
+        float: right
+        font-size: 18px
+        a
+            text-transform: uppercase
+            color: #777777
         &:active
-          text-transform: uppercase
-          color: #f16d7f
-  &.main
-    width: 1140px
-    margin: 0 auto
+            text-transform: uppercase
+            color: #f16d7f
 
 .catalog
-  float: left
-  width: 250px
-  height: 700px
-  display: inline-block
-  .accordion
-    width: 100%
+    float: left
+    width: 250px
+    height: 700px
     display: inline-block
-  button
-    background-color: white
-    border-left: 5px solid #f16d7f
-    border-bottom: 1px solid #ebebeb
-    color: #ef5b70
-    text-transform: uppercase
-    font-weight: 700
-    text-align: left
-    margin-bottom: 15px
-  .panel
-    padding: 0 18px
-    background-color: white
-    display: none
+    @media (max-width: $hor_max)
+        display: none
+    .accordion
+        width: 100%
+        display: inline-block
+    button
+        background-color: white
+        border-left: 5px solid #f16d7f
+        border-bottom: 1px solid #ebebeb
+        color: #ef5b70
+        text-transform: uppercase
+        font-weight: 700
+        text-align: left
+        margin-bottom: 15px
+    .panel
+        padding: 0 18px
+        background-color: white
+        display: none
     ul > li
-      height: 40px
-      font-size: 14px
-      color: #6f6e6e
-      &:hover
-        color: #484748
+        height: 40px
+        font-size: 14px
+        color: #6f6e6e
+        &:hover
+            color: #484748
 
 div
-  &.sort label, &.show label
-    height: 30px
-    width: 70px
-    background-color: #ffffff
-    display: inline-block
-    line-height: 30px
-    text-align: center
-    border: 1px solid #ebebeb
-    border-radius: 0
-    padding: 0
-    float: left
-    border-right: 0
+    &.sort label, &.show label
+        height: 30px
+        width: 70px
+        background-color: #ffffff
+        display: inline-block
+        line-height: 30px
+        text-align: center
+        border: 1px solid #ebebeb
+        border-radius: 0
+        padding: 0
+        float: left
+        border-right: 0
 
 select
-  &#sort, &#show
-    height: 30px
-    width: 70px
-    background-color: #ffffff
-    display: inline-block
-    border: 1px solid #ebebeb
-    border-left: 0
-    padding: 0
-    float: left
-    font-size: 15px
+    &#sort, &#show
+        height: 30px
+        width: 70px
+        background-color: #ffffff
+        display: inline-block
+        border: 1px solid #ebebeb
+        border-left: 0
+        padding: 0
+        float: left
+        font-size: 15px
 
 div
-  &.filters-goods
-    width: 870px
-    margin-left: 20px
-    margin-bottom: 40px
-    display: inline-block
-  &.filters
-    height: 190px
-  &.filters-options
-    height: 110px
-    display: flex
-    justify-content: space-between
-    padding-right: 10px
+    &.filters-goods
+        margin-left: 20px
+        margin-bottom: 40px
+        display: inline-block
+        @media (max-width: $pad_hor)
+            display: block
+            margin-left: 0px
+    &.filters
+        height: 190px
+    &.filters-options
+        height: 110px
+        display: flex
+        justify-content: space-between
+        @media (max-width: $pad_hor)
+            justify-content: space-around
+        padding-right: 10px
+    @media (min-width: $pad_vert)
+        justify-content: baseline
 
 .filters .title
-  text-transform: uppercase
-  font-weight: 900
+    text-transform: uppercase
+    font-weight: 900
 
 .sort-show
-  background-color: #f3f3f3
-  height: 50px
-  line-height: 50px
-  padding-left: 25px
-  .sort
-    display: inline-block
-    margin-top: 10px
-  .show
-    display: inline-block
-    margin-left: 15px
+    background-color: #f3f3f3
+    height: 50px
+    line-height: 50px
+    padding-left: 25px
+    .sort
+        display: inline-block
+        margin-top: 10px
+    .show
+        display: inline-block
+        margin-left: 15px
 
 .filters
-  .trending-now
-    display: inline-block
-    width: 220px
-  .size
-    display: inline-block
-    width: 300px
-
-.size
-  div.chbox-line
-    width: 300px
-  .chbox
-    display: inline-block
-    width: 65px
+    .trending-now
+        display: inline-block
+        width: 220px
+        @media (max-width: $pad_vert)
+            display: none
+    .size
+        .chbox-line
+            width: 300px
+            .chbox
+                display: inline-block
+                width: 65px
+    .price
+        display: inline-block
+        width: 200px
+        @media (max-width: $phone)
+            display: none
+    .filters-options
+        line-height: 30px
 
 .chbox input
-  width: 17px
-  height: 17px
-  top: 6px
-
-.filters
-  .price
-    display: inline-block
-    width: 200px
-  > div.filters-options > div
-    line-height: 30px
+    width: 17px
+    height: 17px
+    top: 6px
 
 input[type='range']
-  width: 200px
-  height: 30px
-  overflow: hidden
-  cursor: pointer
-  outline: none
-  -webkit-appearance: none
-  background: none
-  &::-webkit-slider-runnable-track, &::-webkit-slider-thumb
+    width: 200px
+    height: 30px
+    overflow: hidden
+    cursor: pointer
+    outline: none
     -webkit-appearance: none
     background: none
-  &::-webkit-slider-runnable-track
-    width: 200px
-    height: 1px
-    background: #003D7C
-  &:nth-child(2)::-webkit-slider-runnable-track
-    background: none
-  &::-webkit-slider-thumb
-    position: relative
-    height: 15px
-    width: 15px
-    margin-top: -7px
-    background: #fff
-    border: 1px solid #003D7C
-    border-radius: 25px
-    z-index: 1
-  &:nth-child(1)::-webkit-slider-thumb
-    z-index: 2
+    &::-webkit-slider-runnable-track, &::-webkit-slider-thumb
+        -webkit-appearance: none
+        background: none
+    &::-webkit-slider-runnable-track
+        width: 200px
+        height: 1px
+        background: #003D7C
+    &:nth-child(2)::-webkit-slider-runnable-track
+        background: none
+    &::-webkit-slider-thumb
+        position: relative
+        height: 15px
+        width: 15px
+        margin-top: -7px
+        background: #fff
+        border: 1px solid #003D7C
+        border-radius: 25px
+        z-index: 1
+    &:nth-child(1)::-webkit-slider-thumb
+        z-index: 2
 
 .rangeslider
-  position: relative
-  height: 60px
-  width: 200px
-  display: inline-block
-  input
-    position: absolute
-  span
-    position: absolute
-    margin-top: 30px
-    left: 0
-  .right
     position: relative
-    float: right
-    margin-right: -5px
-
-.goods
-  height: 1100px
-  .line
-    display: flex
-    justify-content: space-between
+    height: 60px
+    width: 200px
+    display: inline-block
+    input
+        position: absolute
+    span
+        position: absolute
+        margin-top: 30px
+        left: 0
+    .right
+        position: relative
+        float: right
+        margin-right: -5px
 
 .goods-footer
-  display: block
-  .pagination
-    height: 45px
-    border: 1px solid #e1e1e1
-    float: left
-    padding-left: 10px
-    padding-right: 10px
-    line-height: 45px
+    height: 30px
+    display: flex
+    justify-content: space-around
+    .pagination
+        height: 40px
+        border: 1px solid #e1e1e1
+        float: left
+        padding-left: 10px
+        padding-right: 10px
+        line-height: 40px
+        @media (max-width: $phone)
+            display: none
     a
-      width: 25px
-      display: inline-block
-      text-align: center
-      color: #777777
-      font-size: 16px
+        width: 25px
+        display: inline-block
+        text-align: center
+        color: #777777
+        font-size: 16px
 
 div.goods-footer button
-  background-color: transparent
-  color: #f16d7f
-  border: 1px solid #f16d7f
-  width: 150px
-  float: right
-
-section.promotion
-  width: 1600px
-  margin: 0 auto
-  height: 340px
-
-.promotion-details
-  display: flex
-  justify-content: space-between
-  height: 340px
-  width: 1140px
-  margin: 0 auto
-  .detail
-    float: left
-    width: 350px
-    text-align: center
-    margin-top: 25px
-    .logo
-      float: none
-      height: auto
-      display: inline
-      img
-        width: 65px
-        height: 55px
+    background-color: transparent
+    color: #f16d7f
+    border: 1px solid #f16d7f
+    width: 150px
+    float: right

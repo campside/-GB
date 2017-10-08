@@ -128,7 +128,6 @@
         .add-to-cart
             display: none
 
-
 .featured-info
     font-size: $font_m
     padding: 5px
@@ -141,37 +140,57 @@
     > .price
         color: #f16d7f
 
-
 // Featured - end
 // Promotion
 
 .promotion
     display: flex
     margin-bottom: 30px
+    @media (max-width: $pad_vert)
+        height: 100%
 
 .promotion-image
-    @media (max-width: $pad_vert)
+    width: 65%
+    img
+        height: 530px
+    @media (max-width: $pad_hor)
         display: none
 
 .promotion-details
+    height: 530px
+    width: 100%
     background-color: #222224
-    padding: 30px 10px 10px
-    .detail-header
-        line-height: 60px
+    padding: 30px 20px 20px
+    @media (max-width: $pad_hor) and (min-width: $phone)
+        height: 100%
+        padding: 10px
         display: flex
-        justify-content: space-around
+    .logo
+        display: inline-block
+        height: 160px
+        margin-right: 20px
+        float: left
+        @media (max-width: $pad_hor) and (min-width: $phone)
+            display: none
+        img
+            width: 60px
     .detail
+        height: 150px
         color: azure
         line-height: 25px
-        .logo
-            display: inline-block
-            img
-                width: 60px
+        margin-top: 10px
+        @media (max-width: $pad_hor) and (min-width: $phone)
+            padding: 10px
     .title
         display: inline-block
         font-size: 31px
         font-weight: 800
+        @media (max-width: $pad_hor) and (min-width: $phone)
+            color: $basic_pink
     .description
         font-weight: lighter
+        line-height: 30px
+        @media (max-width: $pad_hor) and (min-width: $phone)
+            line-height: 25px
 
 // Promotion - end
