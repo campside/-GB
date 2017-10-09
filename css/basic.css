@@ -407,7 +407,7 @@ td {
     justify-content: space-between; } }
 @media (max-width: 1024px) {
   .featured-line {
-    overflow: auto;
+    overflow-y: auto;
     white-space: nowrap; } }
 
 /*# sourceMappingURL=basic.css.map */
