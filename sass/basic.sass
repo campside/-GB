@@ -149,8 +149,8 @@ div.cart
 .menu
     max-width: $pad_vert
     margin: 0 auto
+    overflow-y: auto
     white-space: nowrap
-    overflow: auto
     &.flex
         @media (max-width: $pad_vert)
             justify-content: space-between
@@ -380,8 +380,35 @@ td
             background-color: #f16d7f
 
 // Footer - end
-
 // Common  blocks
+
+section
+    &.new-arrivals
+        max-width: $max_width
+        height: 150px
+        line-height: 150px
+        background-color: $ligth_pink
+        text-transform: uppercase
+        margin: 0 auto 30px
+    .wrapper
+        width: 1140px
+        margin: 0 auto
+    .label
+        font-size: 25px
+        font-weight: bold
+        color: #f16d7f
+        float: left
+        @media (max-width: $phone_hor)
+            display: none
+    .links
+        float: right
+        font-size: 18px
+        a
+            text-transform: uppercase
+            color: #777777
+        &:active
+            text-transform: uppercase
+            color: #f16d7f
 
 .item
     height: 350px
