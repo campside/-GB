@@ -449,4 +449,16 @@ section .links {
     overflow-y: auto;
     white-space: nowrap; } }
 
+.featured {
+  margin-top: 20px; }
+  .featured .featured-title {
+    margin: 0 auto;
+    display: block;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center; }
+    @media (max-width: 415px) {
+      .featured .featured-title {
+        width: 300px; } }
+
 /*# sourceMappingURL=basic.css.map */

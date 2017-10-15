@@ -37,7 +37,7 @@ section.main {
   background-color: #f7f7f7; }
 
 .item-description {
-  width: 1140px;
+  max-width: 1140px;
   background-color: white;
   height: 730px;
   margin: -100px auto 0;
