@@ -79,6 +79,9 @@ header {
 .brand {
   width: 200px;
   height: 100px; }
+  @media (max-width: 415px) {
+    .brand {
+      height: 60px; } }
   @media (max-width: 768px) {
     .brand {
       width: 130px;
@@ -130,6 +133,9 @@ header {
 div.cart {
   width: 200px;
   text-align: center; }
+  @media (max-width: 415px) {
+    div.cart {
+      height: 60px; } }
   @media (max-width: 1024px) {
     div.cart {
       width: auto; } }
@@ -143,6 +149,9 @@ div.cart {
 .nav {
   margin-top: 100px;
   height: 50px; }
+  @media (max-width: 736px) {
+    .nav {
+      height: inherit; } }
   @media (max-width: 415px) {
     .nav {
       margin-top: 60px; } }
@@ -152,6 +161,15 @@ div.cart {
   margin: 0 auto;
   overflow-y: auto;
   white-space: nowrap; }
+  .menu li.icon {
+    display: none; }
+  @media (max-width: 736px) {
+    .menu li {
+      display: none; }
+    .menu li.icon {
+      display: block; }
+      .menu li.icon a {
+        font-size: 30px; } }
   @media (max-width: 768px) {
     .menu.flex {
       justify-content: space-between; } }
@@ -163,10 +181,13 @@ div.cart {
     font-size: 15px;
     font-weight: 700;
     line-height: 30px; }
-    .menu a.menu-item:hover {
+    .menu a.menu-item:active {
       height: 50px;
       background-color: #e1e1e1;
       border-bottom: mediumvioletred 4px solid; }
+      @media (max-width: 736px) {
+        .menu a.menu-item:active {
+          border-bottom: none; } }
   @media (max-width: 768px) {
     .menu div:nth-last-of-type(1) {
       display: none; }

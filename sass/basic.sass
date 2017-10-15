@@ -83,6 +83,8 @@ header
 .brand
     width: 200px
     height: 100px
+    @media (max-width: $phone)
+        height: 60px
     @media (max-width: $pad_vert)
         width: 130px
         text-align: center
@@ -129,6 +131,8 @@ header
 div.cart
     width: 200px
     text-align: center
+    @media (max-width: $phone)
+        height: 60px
     @media (max-width: $pad_hor)
         width: auto
     .cart-icon
@@ -143,14 +147,25 @@ div.cart
 .nav
     margin-top: 100px
     height: 50px
+    @media (max-width: $phone_hor)
+        height: inherit
     @media (max-width: $phone)
         margin-top: 60px
 
 .menu
+    li.icon
+        display: none
     max-width: $pad_vert
     margin: 0 auto
     overflow-y: auto
     white-space: nowrap
+    @media (max-width: $phone_hor)
+        li
+            display: none
+        li.icon
+            display: block
+            a
+                font-size: 30px
     &.flex
         @media (max-width: $pad_vert)
             justify-content: space-between
@@ -162,10 +177,12 @@ div.cart
         font-size: $font_s
         font-weight: 700
         line-height: 30px
-        &:hover
+        &:active
             height: 50px
             background-color: $menu
             border-bottom: mediumvioletred 4px solid
+            @media (max-width: $phone_hor)
+                border-bottom: none
     @media (max-width: $pad_vert)
         div:nth-last-of-type(1)
             display: none
