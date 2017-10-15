@@ -142,7 +142,7 @@ div.cart {
   div.cart .cart-icon {
     float: left;
     padding: 10px 15px 5px 5px; }
-    @media (max-width: 360px) {
+    @media (max-width: 736px) {
       div.cart .cart-icon {
         display: none; } }
 
