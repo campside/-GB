@@ -378,21 +378,11 @@ td {
     width: 40px;
     margin-left: 5px;
     float: left; }
-.socials .fb {
-  background: white url(../images/elements/socials/fb.png) center no-repeat; }
-  .socials .fb:hover {
-    background-color: #f16d7f; }
-.socials .pi {
-  background: white url(../images/elements/socials/pi.png) center no-repeat; }
-  .socials .pi:hover {
-    background-color: #f16d7f; }
-.socials .gg {
-  background: white url(../images/elements/socials/gg.png) center no-repeat; }
-  .socials .gg:hover {
-    background-color: #f16d7f; }
-.socials .in {
-  background: white url(../images/elements/socials/in.png) center no-repeat; }
-  .socials .in:hover {
+.socials .fb, .socials .pi, .socials .gg, .socials .in {
+  text-align: center;
+  line-height: 40px;
+  background-color: white; }
+  .socials .fb:hover, .socials .pi:hover, .socials .gg:hover, .socials .in:hover {
     background-color: #f16d7f; }
 
 section.new-arrivals {

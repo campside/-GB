@@ -18,7 +18,7 @@
       margin-right: 20px; } }
   @media (max-width: 768px) {
     .banners {
-      margin-top: 10px; } }
+      margin-top: 0px; } }
   @media (max-width: 415px) {
     .banners {
       flex-wrap: wrap; } }
