@@ -42,7 +42,7 @@ button
         background-color: transparent
         color: #222222
         &:hover
-            color: white
+            color: $basic_dark
             background-color: #e6e6e6
 
 form
@@ -58,7 +58,6 @@ form
             border: 1px solid #ebebeb
             &:hover
                 background-color: #e6e6e6
-
     label
         font-size: 15px
         font-weight: 900
@@ -417,18 +416,70 @@ section
             text-transform: uppercase
             color: #f16d7f
 
-.item
-    height: 350px
-    margin-bottom: 25px
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 1px 5px 0 rgba(0, 0, 0, 0.11)
-    @media (max-width: $pad_hor)
-        margin-left: 15px
-        margin-right: 15px
-        display: inline-block
-    &:hover
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
-.add-to-cart
-    display: none
+// Featured
+
+.featured
+    margin-top: 20px
+    .featured-title
+        margin: 0 auto
+        display: block
+        font-size: $font_xl
+        font-weight: bold
+        text-align: center
+        @media (max-width: $phone)
+            width: 300px
+    .featured-subtitle
+        display: block
+        font-size: $font_m
+        line-height: $font_xl
+        font-weight: lighter
+        text-align: center
+        margin: 0 auto 20px
+        @media (max-width: $phone)
+            width: 300px
+    .featured-line
+        @media (min-width: $pad_hor+1)
+            display: flex
+            justify-content: space-between
+        @media (max-width: $pad_hor)
+            overflow: auto
+            white-space: nowrap
+        .item
+            height: 350px
+            margin-bottom: 25px
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 1px 5px 0 rgba(0, 0, 0, 0.11)
+            @media (max-width: $pad_hor)
+                margin-left: 15px
+                margin-right: 15px
+                display: inline-block
+            .add-to-cart
+                display: none
+            img.picture
+                transition: 0.8s
+            .featured-pic
+                position: relative
+                width: 261px
+                height: 280px
+                overflow: hidden
+                &:hover
+                    .featured-pic-overlay
+                        width: 100%
+                        height: 100%
+                        position: absolute
+                        background-color: #000
+                        opacity: 0.3
+                        z-index: 1
+                    .picture
+                        transform: scale(1.2)
+                    .add-to-cart
+                        text-align: center
+                        position: absolute
+                        display: block
+                        z-index: 1
+                        width: 100%
+                        margin-top: 130px
+            &:hover
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
 
 .featured-info
     font-size: $font_m
@@ -442,23 +493,6 @@ section
     > .price
         color: #f16d7f
 
-.featured-line
-    @media (min-width: $pad_hor+1)
-        display: flex
-        justify-content: space-between
-    @media (max-width: $pad_hor)
-        overflow-y: auto
-        white-space: nowrap
-
-.featured
-    margin-top: 20px
-    .featured-title
-        margin: 0 auto
-        display: block
-        font-size: $font_xl
-        font-weight: bold
-        text-align: center
-        @media (max-width: $phone)
-            width: 300px
+// Featured - end
 
 // Common  blocks - end

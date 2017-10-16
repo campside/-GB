@@ -93,61 +93,6 @@
   margin-right: 15px;
   display: block; }
 
-.featured {
-  margin-top: 20px; }
-  .featured .featured-title {
-    margin: 0 auto;
-    display: block;
-    font-size: 25px;
-    font-weight: bold;
-    text-align: center; }
-    @media (max-width: 415px) {
-      .featured .featured-title {
-        width: 300px; } }
-  .featured .featured-subtitle {
-    display: block;
-    font-size: 17px;
-    line-height: 25px;
-    font-weight: lighter;
-    text-align: center;
-    margin: 0 auto 20px; }
-    @media (max-width: 415px) {
-      .featured .featured-subtitle {
-        width: 300px; } }
-  @media (min-width: 1025px) {
-    .featured .featured-line {
-      display: flex;
-      justify-content: space-between; } }
-  @media (max-width: 1024px) {
-    .featured .featured-line {
-      overflow: auto;
-      white-space: nowrap; } }
-  .featured .featured-line .item {
-    height: 350px;
-    margin-bottom: 25px;
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 1px 5px 0 rgba(0, 0, 0, 0.11); }
-    @media (max-width: 1024px) {
-      .featured .featured-line .item {
-        margin-left: 15px;
-        margin-right: 15px;
-        display: inline-block; } }
-    .featured .featured-line .item:hover {
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
-  .featured .featured-line .add-to-cart {
-    display: none; }
-
-.featured-info {
-  font-size: 17px;
-  padding: 5px;
-  line-height: 30px;
-  color: #222222; }
-  .featured-info > .title, .featured-info .price {
-    display: block; }
-  .featured-info:hover .price {
-    display: inline-block; }
-  .featured-info > .price {
-    color: #f16d7f; }
-
 .promotion {
   display: flex;
   margin-bottom: 30px; }

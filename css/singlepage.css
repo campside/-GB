@@ -56,6 +56,9 @@ span.featured-title {
 
 .main .item-description {
   padding: 60px; }
+  @media (max-width: 736px) {
+    .main .item-description {
+      padding: 20px 0; } }
   .main .item-description .title {
     margin-bottom: 30px; }
     .main .item-description .title > div {
@@ -160,5 +163,8 @@ button.add-to-cart {
     background-color: #ef5b70;
     color: white;
     border: 1px solid white; }
+
+.featured .featured-title {
+  margin-bottom: 20px; }
 
 /*# sourceMappingURL=singlepage.css.map */
