@@ -49,6 +49,8 @@ section.main
                 .name
                     line-height: 50px
                     font-weight: 900
+                    @media (max-width: $phone)
+                        line-height: 30px
                 .color-size
                     .color, .size
                         display: block
@@ -56,9 +58,16 @@ section.main
                             display: inline-block
                         p.color-value, p.size-value
                             color: $basic_grey
+                    @media (max-width: $phone)
+                        line-height: 15px
+                .add
+                    @media (min-width: $phone)
+                        display: none
         .unit-price, .quantity, .shipping, .subtotal, .action
             line-height: 115px
             text-align: center
+            @media (max-width: $phone)
+                display: none
     .goods-control
         margin-top: 30px
         margin-bottom: 30px

@@ -47,15 +47,27 @@
       .cart-info .goods .product .description .name {
         line-height: 50px;
         font-weight: 900; }
+        @media (max-width: 415px) {
+          .cart-info .goods .product .description .name {
+            line-height: 30px; } }
       .cart-info .goods .product .description .color-size .color, .cart-info .goods .product .description .color-size .size {
         display: block; }
         .cart-info .goods .product .description .color-size .color p, .cart-info .goods .product .description .color-size .size p {
           display: inline-block; }
         .cart-info .goods .product .description .color-size .color p.color-value, .cart-info .goods .product .description .color-size .color p.size-value, .cart-info .goods .product .description .color-size .size p.color-value, .cart-info .goods .product .description .color-size .size p.size-value {
           color: #898989; }
+      @media (max-width: 415px) {
+        .cart-info .goods .product .description .color-size {
+          line-height: 15px; } }
+      @media (min-width: 415px) {
+        .cart-info .goods .product .description .add {
+          display: none; } }
   .cart-info .goods .unit-price, .cart-info .goods .quantity, .cart-info .goods .shipping, .cart-info .goods .subtotal, .cart-info .goods .action {
     line-height: 115px;
     text-align: center; }
+    @media (max-width: 415px) {
+      .cart-info .goods .unit-price, .cart-info .goods .quantity, .cart-info .goods .shipping, .cart-info .goods .subtotal, .cart-info .goods .action {
+        display: none; } }
   .cart-info .goods-control {
     margin-top: 30px;
     margin-bottom: 30px;

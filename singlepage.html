@@ -129,8 +129,12 @@
     <section class="main">
 
         <div class="item-image-slider">
-            <div class="left"></div>
-            <div class="right"></div>
+            <div class="left">
+                <i class="fa fa-chevron-left" aria-hidden="true"></i>
+            </div>
+            <div class="right">
+                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+            </div>
             <img src="images/goods/item-image.jpg"/>
         </div><!-- item-image-slider -->
 
@@ -186,7 +190,7 @@
                     </div>
                     <div class="quantity">
                         <label for="choose-quantity">Quantity</label>
-                        <input type="number" id="choose-quantity" placeholder="1">
+                        <input type="number" id="choose-quantity" placeholder="1" min="1" max="5">
                     </div>
                 </div><!-- select-options -->
 
