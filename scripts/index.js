@@ -10,3 +10,15 @@ showmenu.addEventListener('click', function () {
         menu.style.display = '';
     }
 });
+
+$(function() {
+    $(".item").draggable({ revert: true, helper: "clone" });
+    $(".cart-icon").droppable({
+        drop: function( event, ui ) {
+            $( this )
+                .find( "i" )
+                .removeClass( "fa-shopping-cart" )
+                .addClass( "fa-cart-arrow-down" );
+        }
+    });
+});
