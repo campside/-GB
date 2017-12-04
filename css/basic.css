@@ -28,7 +28,7 @@ a {
 button {
   border: none;
   height: 40px;
-  padding: 0px 30px;
+  padding: 0px 20px;
   text-align: center;
   font-size: 15px; }
   button.basic {
@@ -267,6 +267,9 @@ div.cart {
   line-height: 35px;
   text-transform: uppercase;
   text-align: center; }
+  @media (max-width: 415px) {
+    .subscribe-item .subscribe-text {
+      font-size: 12px; } }
 
 .subscribe-text .title {
   font-size: 25px; }
@@ -297,8 +300,7 @@ div.cart {
     padding: 0;
     display: inline;
     background-color: #f16d7f;
-    color: white;
-    margin-left: -2px; }
+    color: white; }
 
 .pre-footer {
   margin-bottom: 30px; }
@@ -444,6 +446,7 @@ section .links {
       white-space: nowrap; } }
   .featured .featured-line .item {
     height: 350px;
+    border-radius: 5px;
     margin-bottom: 25px;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 1px 5px 0 rgba(0, 0, 0, 0.11); }
     @media (max-width: 1024px) {

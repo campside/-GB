@@ -29,7 +29,7 @@ a
 button
     border: none
     height: 40px
-    padding: 0px 30px
+    padding: 0px 20px
     text-align: center
     font-size: $font_s
     &.basic
@@ -264,6 +264,8 @@ div.cart
     line-height: 35px
     text-transform: uppercase
     text-align: center
+    @media (max-width: $phone)
+        font-size: 12px
 
 .subscribe-text .title
     font-size: 25px
@@ -294,7 +296,6 @@ div.cart
         display: inline
         background-color: #f16d7f
         color: white
-        margin-left: -2px
 
 // Communication - end
 // Pre-Footer
@@ -446,6 +447,7 @@ section
             white-space: nowrap
         .item
             height: 350px
+            border-radius: 5px
             margin-bottom: 25px
             box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 1px 5px 0 rgba(0, 0, 0, 0.11)
             @media (max-width: $pad_hor)

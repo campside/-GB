@@ -92,6 +92,9 @@ span.featured-title {
     line-height: 24px;
     max-width: 610px;
     text-align: center; }
+    @media (max-width: 415px) {
+      .main .item-description .description {
+        padding: 10px; } }
   .main .item-description .details {
     display: block;
     text-align: center;
