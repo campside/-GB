@@ -1,5 +1,4 @@
-.idea/
+# Created by .ignore support plugin (hsz.mobi)
+/node_modules/
 .DS_Store
-/css/constants.css
-css/constants.css
-css/constants.css.map
+/.idea/

@@ -46,6 +46,7 @@ button {
 
 form input[type=checkbox] {
   display: inline-block; }
+
 form select, form input {
   font-size: 15px;
   padding-left: 10px;
@@ -56,6 +57,7 @@ form select, form input {
     border: 1px solid #ebebeb; }
     form select.basic:hover, form input.basic:hover {
       background-color: #e6e6e6; }
+
 form label {
   font-size: 15px;
   font-weight: 900; }
@@ -111,6 +113,7 @@ header {
   @media (max-width: 415px) {
     .search .search-input {
       display: none; } }
+
 .search .search-button {
   width: 40px;
   padding: 0;
@@ -124,6 +127,7 @@ header {
   @media (max-width: 415px) {
     .search .search-button {
       display: none; } }
+
 .search .browse-button {
   border-right: none; }
   @media (max-width: 1024px) {
@@ -196,6 +200,7 @@ div.cart {
 
 .dropdown:hover .dropdown-content {
   display: block; }
+
 .dropdown:hover a.menu-item {
   height: 50px;
   background-color: #e1e1e1;
@@ -339,10 +344,13 @@ table {
 
 thead th:nth-child(1) {
   width: 30%; }
+
 thead th:nth-child(2) {
   width: 20%; }
+
 thead th:nth-child(3) {
   width: 15%; }
+
 thead th:nth-child(4) {
   width: 35%; }
 
@@ -380,6 +388,7 @@ td {
     width: 40px;
     margin-left: 5px;
     float: left; }
+
 .socials .fb, .socials .pi, .socials .gg, .socials .in {
   text-align: center;
   line-height: 40px;
@@ -394,9 +403,11 @@ section.new-arrivals {
   background-color: #f8f3f4;
   text-transform: uppercase;
   margin: 0 auto 30px; }
+
 section .wrapper {
   width: 1140px;
   margin: 0 auto; }
+
 section .label {
   font-size: 25px;
   font-weight: bold;
@@ -405,6 +416,7 @@ section .label {
   @media (max-width: 736px) {
     section .label {
       display: none; } }
+
 section .links {
   float: right;
   font-size: 18px; }
@@ -557,5 +569,3 @@ section .links {
 
 .active, .dot:hover {
   background-color: #717171; }
-
-/*# sourceMappingURL=basic.css.map */

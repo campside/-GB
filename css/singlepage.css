@@ -111,6 +111,7 @@ p.designer {
   .main .item-description .details > div > p {
     display: inline-block;
     font-weight: 700; }
+
 .main .item-description .price {
   display: block;
   text-align: center; }
@@ -183,5 +184,3 @@ button.add-to-cart {
 
 .featured .featured-title {
   margin-bottom: 20px; }
-
-/*# sourceMappingURL=singlepage.css.map */

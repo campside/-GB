@@ -1,114 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Cart (Mikhail Chirkov)</title>
-    <meta name="Author" lang="ru" content="Чирков Михаил"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link rel="stylesheet" href="css/fontawesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/basic.css">
+<?php require_once 'parts/head.php'; ?>
+
     <link rel="stylesheet" href="css/cart.css">
 </head>
 <body>
 
 <div class="wrapper">
 
-    <header class="header">
+    <?php require_once 'parts/header.php'; ?>
 
-        <div class="center flex">
-
-            <div class="brand">
-                <a href="index.html" class="logo-link">
-                    <div class="brand-logo">
-                        <img src="images/elements/logo.png" alt="Home">
-                    </div>
-                    <span>BRAN<b>D</b></span>
-                </a>
-            </div>
-
-            <div class="search">
-                <form action="#">
-                    <button class="browse-button checkout">Browse</button><input type="text" class="basic search-input" placeholder="Search for item..."><button type="basic" class="search-button"><i class="fa fa-search" aria-hidden="true"></i></button>
-                </form>
-            </div>
-
-            <div class="cart">
-                <div class="cart-icon">
-                    <a href="cart.html">
-                        <img src="images/elements/cart.png"/>
-                    </a>
-                </div>
-                <button class="basic">MyAccount</button>
-            </div>
-
-        </div><!-- center -->
-
-    </header><!-- header -->
-
-    <nav class="nav center">
-
-        <ul class="menu flex">
-            <li><a href="index.html" class="menu-item">Home</a></li>
-            <li class="dropdown"><a href="#" class="menu-item">Man</a>
-                <div class="dropdown-content">
-                    <a href="product.html">Outdoor</a>
-                    <a href="product.html">Shoes</a>
-                    <a href="product.html">Underwear</a>
-                    <a href="product.html">Accessiories</a>
-                </div>
-            </li>
-            <li class="dropdown"><a href="#" class="menu-item">Woman</a>
-                <div class="dropdown-content">
-                    <a href="product.html">Outdoor</a>
-                    <a href="product.html">Shoes</a>
-                    <a href="product.html">Underwear</a>
-                </div>
-            </li>
-            <li class="dropdown"><a href="#" class="menu-item">Kids</a>
-                <div class="dropdown-content">
-                    <a href="product.html">Outdoor</a>
-                    <a href="product.html">Shoes</a>
-                    <a href="product.html">Underwear</a>
-                </div>
-            </li>
-            <li class="dropdown"><a href="#" class="menu-item">Accessories</a>
-                <div class="dropdown-content">
-                    <a href="product.html">Outdoor</a>
-                    <a href="product.html">Shoes</a>
-                    <a href="product.html">Underwear</a>
-                </div>
-            </li>
-            <li class="dropdown"><a href="#" class="menu-item">Featured</a>
-                <div class="dropdown-content">
-                    <a href="product.html">Outdoor</a>
-                    <a href="product.html">Shoes</a>
-                    <a href="product.html">Underwear</a>
-                </div>
-            </li>
-            <li class="dropdown"><a href="#" class="menu-item">Hot Deals</a>
-                <div class="dropdown-content">
-                    <a href="product.html">50% OFF</a>
-                    <a href="product.html">30% OFF</a>
-                    <a href="product.html">20% OFF</a>
-                </div>
-            </li>
-            <li class="icon">
-                <a href="#" class="menu-item" id="showMenu">&#9776;</a>
-            </li>
-        </ul>
-
-        <div class="menu" id="mobileMenu">
-            <a href="#" class="menu-item">Man</a>
-            <a href="#" class="menu-item">Woman</a>
-            <a href="#" class="menu-item">Kids</a>
-            <a href="#" class="menu-item">Accessories</a>
-            <a href="#" class="menu-item">Featured</a>
-            <a href="#" class="menu-item">Hot Deals</a>
-        </div>
-
-    </nav><!-- navbar -->
+    <?php require_once 'parts/nav.php'; ?>
 
     <section class="new-arrivals">
         <div class="center flex">
@@ -153,7 +53,7 @@
                     <div class="product">
                         <div class="product-details">
                             <div class="picture">
-                                <a href="singlepage.html">
+                                <a href="singlepage.php">
                                     <img src="images/goods/1.jpg" />
                                 </a>
                             </div>
@@ -206,7 +106,7 @@
                     <div class="product">
                     <div class="product-details">
                         <div class="picture">
-                            <a href="singlepage.html">
+                            <a href="singlepage.php">
                                 <img src="images/goods/1.jpg" />
                             </a>
                         </div>
@@ -259,7 +159,7 @@
                     <div class="product">
                     <div class="product-details">
                         <div class="picture">
-                            <a href="singlepage.html">
+                            <a href="singlepage.php">
                                 <img src="images/goods/1.jpg" />
                             </a>
                         </div>
@@ -316,7 +216,7 @@
             </div>
         </div><!-- cart-ifo -->
 
-        <form class="checkout" action="checkout.html">
+        <form class="checkout" action="checkout.php">
 
                 <div class="address">
                     <div class="label">Shipping Address</div>
@@ -355,127 +255,15 @@
 
     </section><!-- main -->
 
-    <section class="communication">
-        <div class="center flex_around">
-            <div class="feedback">
-                <div class="feedback-item">
-                    <div class="ava">
-                        <img class="picture" src="images/goods/1.jpg"/>
-                    </div>
-                    <div class="feedback-item-content">
-                        <div class="quote">"Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old."
-                        </div>
-                        <div class="who">
-                            <div class="name"><b>Jenny Jane</b></div>
-                            <div class="place">Moscow, Russia</div>
-                        </div>
-                        <div class="feedback-pagination">
-                            <ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div> <!-- feedback -->
-            <div class="subscribe">
-                <div class="subscribe-item">
-                    <div class="subscribe-text">
-                        <div class="title">Subscribe</div>
-                        <div class="subtitle">For our newsletter and promotion</div>
-                    </div>
-                    <div class="subscribe-form">
-                        <form action="#" method="post">
-                            <input class="subscribe-input" placeholder="Enter Your Email" type="email" required><input
-                                class="subscribe-submit" type="submit" value="Subscribe">
-                        </form>
-                    </div>
-                </div>
-            </div> <!-- subscribe -->
-        </div>
-    </section><!-- communication -->
+    <?php require_once 'parts/communication.php'; ?>
 
-    <section class="pre-footer center">
+    <?php require_once 'parts/pre-footer.php'; ?>
 
-        <div class="flex_around">
-            <div class="story">
-
-                <div class="brand">
-                    <a href="index.html" class="logo-link">
-                        <div class="brand-logo">
-                            <img src="images/elements/logo.png" alt="Home">
-                        </div>
-                        <span>BRAN<b>D</b></span>
-                    </a>
-                </div>
-
-                <article class="story-part">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less.
-                </article>
-                <br>
-                <article class="story-part">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.
-                </article>
-            </div>
-            <div class="table">
-                <table>
-                    <tr>
-                        <th>Company</th>
-                        <th>Information</th>
-                        <th>Category</th>
-                    </tr>
-                    <tr>
-                        <td><a href="index.html">Home</a></td>
-                        <td><a href="#">Tearms & Conditions</a></td>
-                        <td><a href="product.html">Men</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="product.html">Shop</a></td>
-                        <td><a href="#">Privacy Policy</a></td>
-                        <td><a href="product.html">Woman</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="#">About</a></td>
-                        <td><a href="#">How to Buy</a></td>
-                        <td><a href="product.html">Child</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="#">How It Works</a></td>
-                        <td><a href="#">How to Shell</a></td>
-                        <td><a href="product.html">Apparel</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="#">Contact</a></td>
-                        <td><a href="#">Promotion</a></td>
-                        <td><a href="product.html">All</a></td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-
-    </section><!-- pre-footer -->
-
-    <footer class="footer">
-        <div class="center flex">
-            <div class="copyright">&copy; By Mikhail Chirkov</div>
-            <div class="socials">
-                <a href="https://fb.com">
-                    <div class="fb"><i class="fa fa-facebook" aria-hidden="true"></i></div>
-                </a>
-                <a href="https://pinterest.com">
-                    <div class="pi"><i class="fa fa-pinterest" aria-hidden="true"></i></div>
-                </a>
-                <a href="https://google.ru">
-                    <div class="gg"><i class="fa fa-google" aria-hidden="true"></i></div>
-                </a>
-                <a href="https://instagram.com">
-                    <div class="in"><i class="fa fa-instagram" aria-hidden="true"></i></div>
-                </a>
-            </div>
-        </div>
-    </footer><!-- footer -->
+    <?php require_once 'parts/footer.php'; ?>
 
 </div>
 <script src="scripts/index.js"></script>
+<script src="scripts/cart.js"></script>
 
 </body>
 </html>

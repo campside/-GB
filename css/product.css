@@ -64,8 +64,10 @@ div.filters-goods {
     div.filters-goods {
       display: block;
       margin-left: 0px; } }
+
 div.filters {
   height: 190px; }
+
 div.filters-options {
   height: 110px;
   display: flex;
@@ -74,6 +76,7 @@ div.filters-options {
   @media (max-width: 1024px) {
     div.filters-options {
       justify-content: space-around; } }
+
 @media (min-width: 768px) {
   div {
     justify-content: baseline; } }
@@ -100,17 +103,20 @@ div.filters-options {
   @media (max-width: 768px) {
     .filters .trending-now {
       display: none; } }
+
 .filters .size .chbox-line {
   width: 300px; }
   .filters .size .chbox-line .chbox {
     display: inline-block;
     width: 65px; }
+
 .filters .price {
   display: inline-block;
   width: 200px; }
   @media (max-width: 415px) {
     .filters .price {
       display: none; } }
+
 .filters .filters-options {
   line-height: 30px; }
 
@@ -191,5 +197,3 @@ div.goods-footer button {
   border: 1px solid #f16d7f;
   width: 150px;
   float: right; }
-
-/*# sourceMappingURL=product.css.map */

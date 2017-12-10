@@ -1,114 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Product (Mikhail Chirkov)</title>
-    <meta name="Author" lang="ru" content="Чирков Михаил"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link rel="stylesheet" href="css/fontawesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/basic.css">
-    <link rel="stylesheet" href="css/product.css">
+<?php require_once 'parts/head.php'; ?>
+<link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" href="css/product.css">
 </head>
 <body>
 
 <div class="wrapper">
 
-    <header class="header">
+    <?php require_once 'parts/header.php'; ?>
 
-        <div class="center flex">
-
-            <div class="brand">
-                <a href="index.html" class="logo-link">
-                    <div class="brand-logo">
-                        <img src="images/elements/logo.png" alt="Home">
-                    </div>
-                    <span>BRAN<b>D</b></span>
-                </a>
-            </div>
-
-            <div class="search">
-                <form action="#">
-                    <button class="browse-button checkout">Browse</button>
-                    <input type="text" class="basic search-input" placeholder="Search for item...">
-                    <button type="basic" class="search-button"><i class="fa fa-search" aria-hidden="true"></i></button>
-                </form>
-            </div>
-
-            <div class="cart">
-                <div class="cart-icon">
-                    <a href="cart.html">
-                        <img src="images/elements/cart.png"/>
-                    </a>
-                </div>
-                <button class="basic">MyAccount</button>
-            </div>
-
-        </div><!-- center -->
-    </header><!-- header -->
-
-    <nav class="nav center">
-
-        <ul class="menu flex">
-            <li><a href="index.html" class="menu-item">Home</a></li>
-            <li class="dropdown"><a href="#" class="menu-item">Man</a>
-                <div class="dropdown-content">
-                    <a href="product.html">Outdoor</a>
-                    <a href="product.html">Shoes</a>
-                    <a href="product.html">Underwear</a>
-                    <a href="product.html">Accessiories</a>
-                </div>
-            </li>
-            <li class="dropdown"><a href="#" class="menu-item">Woman</a>
-                <div class="dropdown-content">
-                    <a href="product.html">Outdoor</a>
-                    <a href="product.html">Shoes</a>
-                    <a href="product.html">Underwear</a>
-                </div>
-            </li>
-            <li class="dropdown"><a href="#" class="menu-item">Kids</a>
-                <div class="dropdown-content">
-                    <a href="product.html">Outdoor</a>
-                    <a href="product.html">Shoes</a>
-                    <a href="product.html">Underwear</a>
-                </div>
-            </li>
-            <li class="dropdown"><a href="#" class="menu-item">Accessories</a>
-                <div class="dropdown-content">
-                    <a href="product.html">Outdoor</a>
-                    <a href="product.html">Shoes</a>
-                    <a href="product.html">Underwear</a>
-                </div>
-            </li>
-            <li class="dropdown"><a href="#" class="menu-item">Featured</a>
-                <div class="dropdown-content">
-                    <a href="product.html">Outdoor</a>
-                    <a href="product.html">Shoes</a>
-                    <a href="product.html">Underwear</a>
-                </div>
-            </li>
-            <li class="dropdown"><a href="#" class="menu-item">Hot Deals</a>
-                <div class="dropdown-content">
-                    <a href="product.html">50% OFF</a>
-                    <a href="product.html">30% OFF</a>
-                    <a href="product.html">20% OFF</a>
-                </div>
-            </li>
-            <li class="icon">
-                <a href="#" class="menu-item" id="showMenu">&#9776;</a>
-            </li>
-        </ul>
-
-        <div class="menu" id="mobileMenu">
-            <a href="#" class="menu-item">Man</a>
-            <a href="#" class="menu-item">Woman</a>
-            <a href="#" class="menu-item">Kids</a>
-            <a href="#" class="menu-item">Accessories</a>
-            <a href="#" class="menu-item">Featured</a>
-            <a href="#" class="menu-item">Hot Deals</a>
-        </div>
-    </nav><!-- navbar -->
+    <?php require_once 'parts/nav.php'; ?>
 
     <section class="new-arrivals">
         <div class="center flex">
@@ -259,28 +159,30 @@
                 <div class="sort-show">
                     <div class="sort">
                         <label for="sort">Sort by</label><select name="sort" id="sort">
-                        <option value="volvo">Name</option>
-                        <option value="saab">Price</option>
-                        <option value="mercedes">Mercedes</option>
-                        <option value="audi">Audi</option>
-                    </select></div>
+                            <option value="volvo">Name</option>
+                            <option value="saab">Price</option>
+                            <option value="mercedes">Mercedes</option>
+                            <option value="audi">Audi</option>
+                        </select></div>
 
                     <div class="show">
                         <label for="show">Show</label><select name="show" id="show">
-                        <option value="volvo">6</option>
-                        <option value="saab">9</option>
-                        <option value="mercedes">12</option>
-                    </select>
+                            <option value="volvo">6</option>
+                            <option value="saab">9</option>
+                            <option value="mercedes">12</option>
+                        </select>
                     </div>
                 </div><!-- sort-show -->
             </div><!-- filters -->
 
+            <div class="featured">
+
                 <div class="featured-line">
-                    <a class="item" href="singlepage.html">
+                    <a class="item" href="singlepage.php">
                         <div class="featured-pic">
                             <div class="featured-pic-overlay"></div>
                             <div class="add-to-cart">
-                                <img class="cart" src="images/elements/addtocart.png" class="add"/>
+                                <img class="cart" src="images/elements/addtocart.png"/>
                             </div>
                             <img class="picture" src="images/goods/1.jpg" alt=""/>
                         </div>
@@ -289,7 +191,7 @@
                             <span class="price">$99.00</span>
                         </div>
                     </a>
-                    <a class="item" href="singlepage.html">
+                    <a class="item" href="singlepage.php">
                         <div class="featured-pic">
                             <div class="featured-pic-overlay"></div>
                             <div class="add-to-cart">
@@ -302,7 +204,49 @@
                             <span class="price">$99.00</span>
                         </div>
                     </a>
-                    <a class="item" href="singlepage.html">
+                    <a class="item" href="singlepage.php">
+                        <div class="featured-pic">
+                            <div class="featured-pic-overlay"></div>
+                            <div class="add-to-cart">
+                                <img class="cart" src="images/elements/addtocart.png" class="add"/>
+                            </div>
+                            <img class="picture" src="images/goods/3.jpg" alt=""/>
+                        </div>
+                        <div class="featured-info">
+                            <span class="title">Mango People T-Shirt </span>
+                            <span class="price">$99.00</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="featured-line">
+                    <a class="item" href="singlepage.php">
+                        <div class="featured-pic">
+                            <div class="featured-pic-overlay"></div>
+                            <div class="add-to-cart">
+                                <img class="cart" src="images/elements/addtocart.png" class="add"/>
+                            </div>
+                            <img class="picture" src="images/goods/1.jpg" alt=""/>
+                        </div>
+                        <div class="featured-info">
+                            <span class="title">Mango People T-Shirt </span>
+                            <span class="price">$99.00</span>
+                        </div>
+                    </a>
+                    <a class="item" href="singlepage.php">
+                        <div class="featured-pic">
+                            <div class="featured-pic-overlay"></div>
+                            <div class="add-to-cart">
+                                <img class="cart" src="images/elements/addtocart.png" class="add"/>
+                            </div>
+                            <img class="picture" src="images/goods/2.jpg" alt=""/>
+                        </div>
+                        <div class="featured-info">
+                            <span class="title">Mango People T-Shirt </span>
+                            <span class="price">$99.00</span>
+                        </div>
+                    </a>
+                    <a class="item" href="singlepage.php">
                         <div class="featured-pic">
                             <div class="featured-pic-overlay"></div>
                             <div class="add-to-cart">
@@ -318,7 +262,7 @@
                 </div><!-- line -->
 
                 <div class="featured-line">
-                    <a class="item" href="singlepage.html">
+                    <a class="item" href="singlepage.php">
                         <div class="featured-pic">
                             <div class="featured-pic-overlay"></div>
                             <div class="add-to-cart">
@@ -331,7 +275,7 @@
                             <span class="price">$99.00</span>
                         </div>
                     </a>
-                    <a class="item" href="singlepage.html">
+                    <a class="item" href="singlepage.php">
                         <div class="featured-pic">
                             <div class="featured-pic-overlay"></div>
                             <div class="add-to-cart">
@@ -344,7 +288,7 @@
                             <span class="price">$99.00</span>
                         </div>
                     </a>
-                    <a class="item" href="singlepage.html">
+                    <a class="item" href="singlepage.php">
                         <div class="featured-pic">
                             <div class="featured-pic-overlay"></div>
                             <div class="add-to-cart">
@@ -359,48 +303,8 @@
                     </a>
                 </div><!-- line -->
 
-                <div class="featured-line">
-                    <a class="item" href="singlepage.html">
-                        <div class="featured-pic">
-                            <div class="featured-pic-overlay"></div>
-                            <div class="add-to-cart">
-                                <img class="cart" src="images/elements/addtocart.png" class="add"/>
-                            </div>
-                            <img class="picture" src="images/goods/1.jpg" alt=""/>
-                        </div>
-                        <div class="featured-info">
-                            <span class="title">Mango People T-Shirt </span>
-                            <span class="price">$99.00</span>
-                        </div>
-                    </a>
-                    <a class="item" href="singlepage.html">
-                        <div class="featured-pic">
-                            <div class="featured-pic-overlay"></div>
-                            <div class="add-to-cart">
-                                <img class="cart" src="images/elements/addtocart.png" class="add"/>
-                            </div>
-                            <img class="picture" src="images/goods/2.jpg" alt=""/>
-                        </div>
-                        <div class="featured-info">
-                            <span class="title">Mango People T-Shirt </span>
-                            <span class="price">$99.00</span>
-                        </div>
-                    </a>
-                    <a class="item" href="singlepage.html">
-                        <div class="featured-pic">
-                            <div class="featured-pic-overlay"></div>
-                            <div class="add-to-cart">
-                                <img class="cart" src="images/elements/addtocart.png" class="add"/>
-                            </div>
-                            <img class="picture" src="images/goods/3.jpg" alt=""/>
-                        </div>
-                        <div class="featured-info">
-                            <span class="title">Mango People T-Shirt </span>
-                            <span class="price">$99.00</span>
-                        </div>
-                    </a>
-                </div><!-- line -->
-
+            </div>
+                
             <div class="goods-footer">
                 <div class="pagination">
                     <a href="#"><</a>
@@ -419,124 +323,11 @@
         </div><!-- filters-goods -->
     </section><!-- main -->
 
-    <section class="communication">
-        <div class="center flex_around">
-            <div class="feedback">
-                <div class="feedback-item">
-                    <div class="ava">
-                        <img class="picture" src="images/goods/1.jpg"/>
-                    </div>
-                    <div class="feedback-item-content">
-                        <div class="quote">"Contrary to popular belief, Lorem Ipsum is not simply random text. It has
-                            roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old."
-                        </div>
-                        <div class="who">
-                            <div class="name"><b>Jenny Jane</b></div>
-                            <div class="place">Moscow, Russia</div>
-                        </div>
-                        <div class="feedback-pagination">
-                            <ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div> <!-- feedback -->
-            <div class="subscribe">
-                <div class="subscribe-item">
-                    <div class="subscribe-text">
-                        <div class="title">Subscribe</div>
-                        <div class="subtitle">For our newsletter and promotion</div>
-                    </div>
-                    <div class="subscribe-form">
-                        <form action="#" method="post">
-                            <input class="subscribe-input" placeholder="Enter Your Email" type="email" required><input
-                                class="subscribe-submit" type="submit" value="Subscribe">
-                        </form>
-                    </div>
-                </div>
-            </div> <!-- subscribe -->
-        </div>
-    </section><!-- communication -->
+    <?php require_once 'parts/communication.php'; ?>
 
-    <section class="pre-footer center">
+    <?php require_once 'parts/pre-footer.php'; ?>
 
-        <div class="flex_around">
-            <div class="story">
-
-                <div class="brand">
-                    <a href="index.html" class="logo-link">
-                        <div class="brand-logo">
-                            <img src="images/elements/logo.png" alt="Home">
-                        </div>
-                        <span>BRAN<b>D</b></span>
-                    </a>
-                </div>
-
-                <article class="story-part">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less.
-                </article>
-                <br>
-                <article class="story-part">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.
-                </article>
-            </div>
-            <div class="table">
-                <table>
-                    <tr>
-                        <th>Company</th>
-                        <th>Information</th>
-                        <th>Category</th>
-                    </tr>
-                    <tr>
-                        <td><a href="index.html">Home</a></td>
-                        <td><a href="#">Tearms & Conditions</a></td>
-                        <td><a href="product.html">Men</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="product.html">Shop</a></td>
-                        <td><a href="#">Privacy Policy</a></td>
-                        <td><a href="product.html">Woman</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="#">About</a></td>
-                        <td><a href="#">How to Buy</a></td>
-                        <td><a href="product.html">Child</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="#">How It Works</a></td>
-                        <td><a href="#">How to Shell</a></td>
-                        <td><a href="product.html">Apparel</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="#">Contact</a></td>
-                        <td><a href="#">Promotion</a></td>
-                        <td><a href="product.html">All</a></td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </section><!-- pre-footer -->
-
-    <footer class="footer">
-        <div class="center flex">
-            <div class="copyright">&copy; By Mikhail Chirkov</div>
-            <div class="socials">
-                <a href="https://fb.com">
-                    <div class="fb"><i class="fa fa-facebook" aria-hidden="true"></i></div>
-                </a>
-                <a href="https://pinterest.com">
-                    <div class="pi"><i class="fa fa-pinterest" aria-hidden="true"></i></div>
-                </a>
-                <a href="https://google.ru">
-                    <div class="gg"><i class="fa fa-google" aria-hidden="true"></i></div>
-                </a>
-                <a href="https://instagram.com">
-                    <div class="in"><i class="fa fa-instagram" aria-hidden="true"></i></div>
-                </a>
-            </div>
-        </div>
-    </footer><!-- footer -->
+    <?php require_once 'parts/footer.php'; ?>
 
 </div>
 </body>
